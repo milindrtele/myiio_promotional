@@ -6,3 +6,25 @@
   margin: 0 auto;
   text-align: center;
 }
+
+.logo{
+  width: 250px;
+  height: 3rem;
+  background-image: url('./public/assets/myiio_logo_navbar.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.box_image_nfc{
+    background-image: url('./public/assets/myiio_img_nfc.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.box_image{
+  background-image: url('./public/assets/myiio_img_101.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex: 1;
+  height: 400px;
+}

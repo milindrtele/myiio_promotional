@@ -1,10 +1,11 @@
+import { useState } from 'react'
+import '../App.css'
+
 function Navbar(){
     return (
      <nav className="flex items-center justify-between px-8 py-4 bg-black">
-        <h1 className="text-xl font-bold text-white">
-          <span className="text-green-400">MYIIO</span>Cloud
-        </h1>
-        <ul className="hidden md:flex space-x-8 text-white">
+        <div className="logo"></div>
+        <ul className="hidden md:flex space-x-8 text-white justify-end">
           <li><a href="#products" className="hover:text-green-400">Products</a></li>
           <li><a href="#solutions" className="hover:text-green-400">Solutions</a></li>
           <li><a href="#pricing" className="hover:text-green-400">Pricing</a></li>
@@ -15,7 +16,7 @@ function Navbar(){
           Try MYIIO
         </button>
         {/* Mobile menu icon */}
-        <div className="md:hidden text-white text-2xl">
+        <div className="text-white text-2xl">
           ☰
         </div>
       </nav>
