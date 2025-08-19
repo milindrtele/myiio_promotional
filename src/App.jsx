@@ -8,6 +8,7 @@ import UseCases from './components/UseCase'
 import WhyMyiio from './components/WhyMyiio'
 import FreeTrial from './components/FreeTrial'
 import Footer from './components/Footer'
+import Partnership from './components/Partnership'
 import './App.css'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <KeyFeatures />
       <UseCases />
       <WhyMyiio />
+      <Partnership />
       <FreeTrial />
       <Footer />
     </>

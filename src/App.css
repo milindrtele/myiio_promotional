@@ -25,6 +25,59 @@
   background-image: url('./public/assets/myiio_img_101.png');
   background-size: contain;
   background-repeat: no-repeat;
+
   flex: 1;
   height: 400px;
+}
+
+.box_image_drm{
+  background-image: url('./public/assets/myiio_img_drm_ready.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.box_image_key_features{
+  background-image: url('./public/assets/myiio_img_102.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex: 1;
+  height: 400px;
+  margin: auto;
+}
+
+.holox_image{
+  background-image: url('./public/assets/myiio_img_holobox.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 1;
+  height: 400px;
+  margin: auto;
+}
+
+.myiio_device{
+  background-image: url('./public/assets/myiio_img_104.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 1;
+  height: 400px;
+  margin: auto;
+}
+
+.kiosk_image{
+  background-image: url('./public/assets/myiio_img_103.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 1;
+  height: 400px;
+  margin: auto;
+}
+
+.hover_icon{
+  background-image: url('./public/assets/myiio_icon_titleheader.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }

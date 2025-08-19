@@ -32,16 +32,9 @@ export default function KeyFeatures() {
         </div>
 
         {/* Right: Product Image */}
-        <div className="relative flex justify-center">
-          {/* DRM Badge */}
-          <div className="absolute top-4 left-4 bg-black text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-            DRM <br /> AES 256
-          </div>
-          <img
-            src="/assets/myiio-box.png"
-            alt="MYIIO Device"
-            className="rounded-2xl shadow-xl max-w-sm"
-          />
+        <div className="mx-auto relative flex justify-center w-[80%] h-[max-content]">
+          <div className="box_image_drm w-[20%] h-[20%] absolute -top-6 -left-6 px-4 py-2"></div>
+          <div className="box_image_key_features "></div>
         </div>
       </div>
     </section>

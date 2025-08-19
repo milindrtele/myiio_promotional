@@ -14,11 +14,12 @@ export default function WhyMyiio() {
       <div className="grid md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
         {/* Left: Product Image */}
         <div className="flex justify-center">
-          <img
+          <div className="myiio_device"></div>
+          {/* <img
             src="/assets/myiio-device.png"
             alt="MYIIO Device"
             className="rounded-2xl shadow-xl max-w-sm"
-          />
+          /> */}
         </div>
 
         {/* Right: Content */}

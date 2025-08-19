@@ -61,14 +61,14 @@ function FAQ() {
             className="bg-[#256D6D] rounded-lg shadow p-4 cursor-pointer"
           >
             <div
-              className="flex justify-between items-center"
+              className="flex  items-center"
               onClick={() => toggleFAQ(index)}
             >
-                <span className="text-xl font-bold">
+              <span className="text-xl font-bold">
                 {openIndex === index ? "−" : "+"}
               </span>
-              <span className="font-medium justify-start">{item.question}</span>
-              
+              <span className="font-medium ml-5">{item.question}</span>
+
             </div>
             {openIndex === index && (
               <p className="mt-3 text-sm text-gray-200 leading-relaxed">
