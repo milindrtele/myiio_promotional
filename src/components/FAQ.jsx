@@ -4,18 +4,18 @@ const faqs = [
   {
     question: "What types of media does MYIIO Cloud support?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
   {
     question:
       "How can I update remote app or install/update other apps remotely?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus ante dapibus diam.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
   {
     question: "How can content be updated remotely?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sem at nibh elementum imperdiet.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
   {
     question: "Does MYIIO Cloud support white-label solutions?",
@@ -53,30 +53,33 @@ function FAQ() {
 
   return (
     <section className="w-full bg-[#143D3D] text-white py-12 px-6">
-      <h2 className="text-center text-3xl font-bold mb-10">F. A. Q.</h2>
-      <div className="max-w-2xl mx-auto space-y-4">
-        {faqs.map((item, index) => (
-          <div
-            key={index}
-            className="bg-[#256D6D] rounded-lg shadow p-4 cursor-pointer"
-          >
+      <h2 className="text-center text-6xl text-[#57c2c0] font-bold mb-10">
+        F. A. Q.
+      </h2>
+      <div className="mx-auto bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[5px] border-[#355453] relative rounded-3xl p-8 shadow-lg w-[72%]">
+        <div className="w-[85%] mx-auto space-y-4">
+          {faqs.map((item, index) => (
             <div
-              className="flex  items-center"
-              onClick={() => toggleFAQ(index)}
+              key={index}
+              className="bg-[#234a4a] rounded-lg shadow p-4 cursor-pointer"
             >
-              <span className="text-xl font-bold">
-                {openIndex === index ? "−" : "+"}
-              </span>
-              <span className="font-medium ml-5">{item.question}</span>
-
+              <div
+                className="flex  items-center"
+                onClick={() => toggleFAQ(index)}
+              >
+                <span className="text-xl font-bold">
+                  {openIndex === index ? "−" : "+"}
+                </span>
+                <span className="font-medium ml-5">{item.question}</span>
+              </div>
+              {openIndex === index && (
+                <p className="mt-3 text-sm text-gray-200 leading-relaxed text text-left ml-9">
+                  {item.answer}
+                </p>
+              )}
             </div>
-            {openIndex === index && (
-              <p className="mt-3 text-sm text-gray-200 leading-relaxed">
-                {item.answer}
-              </p>
-            )}
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

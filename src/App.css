@@ -1,4 +1,3 @@
-
 @import "tailwindcss";
 
 #root {
@@ -7,77 +6,105 @@
   text-align: center;
 }
 
-.logo{
+.logo {
   width: 250px;
   height: 3rem;
-  background-image: url('./public/assets/myiio_logo_navbar.png');
+  background-image: url("./public/assets/myiio_logo_navbar.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.box_image_nfc{
-    background-image: url('./public/assets/myiio_img_nfc.png');
+.box_image_nfc {
+  background-image: url("./public/assets/myiio_img_nfc.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.box_image{
-  background-image: url('./public/assets/myiio_img_101.png');
+.box_image {
+  background-image: url("./public/assets/myiio_img_101.png");
   background-size: contain;
   background-repeat: no-repeat;
 
+  width: 80%;
   flex: 1;
-  height: 400px;
+  /* height: 400px; */
 }
 
-.box_image_drm{
-  background-image: url('./public/assets/myiio_img_drm_ready.png');
+.box_image_drm {
+  background-image: url("./public/assets/myiio_img_drm_ready.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.box_image_key_features{
-  background-image: url('./public/assets/myiio_img_102.png');
+.box_image_key_features {
+  background-image: url("./public/assets/myiio_img_102.png");
   background-size: contain;
   background-repeat: no-repeat;
   flex: 1;
-  height: 400px;
+  height: 500px;
   margin: auto;
 }
 
-.holox_image{
-  background-image: url('./public/assets/myiio_img_holobox.png');
+.holox_image {
+  background-image: url("./public/assets/myiio_img_holobox.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  flex: 1;
+  height: 600px;
+  margin: auto;
+}
+
+.myiio_device {
+  background-image: url("./public/assets/myiio_img_104.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  flex: 1;
+  height: 600px;
+  margin: auto;
+}
+
+.kiosk_image {
+  background-image: url("./public/assets/myiio_img_103.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  flex: 1;
+  height: 700px;
+  margin: auto;
+}
+
+.hover_icon {
+  background-image: url("./public/assets/myiio_icon_titleheader.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.free_trial_img {
+  background-image: url("./public/assets/myiio_icon_power_with.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   flex: 1;
-  height: 400px;
+  width: 50%;
+  height: 50px !important;
   margin: auto;
 }
 
-.myiio_device{
-  background-image: url('./public/assets/myiio_img_104.png');
+.logo_footer {
+  position: relative;
+  width: 100%;
+  height: 4rem;
+  background-image: url("./public/assets/myiio_logo_navbar.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-  flex: 1;
-  height: 400px;
-  margin: auto;
+  background-position: -7.5% 0;
 }
 
-.kiosk_image{
-  background-image: url('./public/assets/myiio_img_103.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  flex: 1;
-  height: 400px;
-  margin: auto;
-}
-
-.hover_icon{
-  background-image: url('./public/assets/myiio_icon_titleheader.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+@media (orientation: portrait) {
+  .logo_footer {
+    background-position: center;
+  }
 }
