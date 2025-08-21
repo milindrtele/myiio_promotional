@@ -56,8 +56,8 @@ function FAQ() {
       <h2 className="text-center text-6xl text-[#57c2c0] font-bold mb-10">
         F. A. Q.
       </h2>
-      <div className="mx-auto bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[5px] border-[#355453] relative rounded-3xl p-8 shadow-lg w-[72%]">
-        <div className="w-[85%] mx-auto space-y-4">
+      <div className="mx-auto bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[5px] border-[#355453] relative rounded-3xl p-8 shadow-lg w-[95%] md:w-[72%]">
+        <div className="w-[95%] md:w-[85%] mx-auto space-y-4">
           {faqs.map((item, index) => (
             <div
               key={index}

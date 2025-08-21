@@ -25,7 +25,7 @@ export default function Partnership() {
 
   return (
     <section className="bg-[#143D3D] text-white py-16 px-8">
-      <div className="grid md:grid-cols-2 gap-12 items-center w-[72%] mx-auto">
+      <div className="grid md:grid-cols-2 gap-12 items-center w-[95%] md:w-[72%] mx-auto">
         {/* Left: Product Image */}
         <div className="flex justify-center">
           <div className="kiosk_image"></div>
@@ -33,13 +33,13 @@ export default function Partnership() {
 
         {/* Right: Content */}
         <div>
-          <h2 className="text-5xl font-bold mb-6 text-cyan-400">
+          <h2 className="text-5xl font-bold mb-6 text-cyan-400 text-center">
             Partnership Framework
           </h2>
 
-          <div className="mt-[10%] bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[5px] border-[#355453] relative rounded-3xl p-6 shadow-lg">
+          <div className="mt-[30%] md:mt-[10%] bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[5px] border-[#355453] relative rounded-3xl p-6 shadow-lg">
             {/* Icon placeholder */}
-            <div className="hover_icon w-[20%] h-[20%] absolute -top-10 left-6 px-4 py-2"></div>
+            <div className="hover_icon w-[20%] h-[20%] absolute -top-15 md:-top-10 left-6 px-4 py-2"></div>
 
             <ul className="space-y-4 mt-[10%]">
               {items.map((item, i) => (

@@ -23,7 +23,7 @@ export default function WhyMyiio() {
         </div>
 
         {/* Right: Content */}
-        <div className="w-[max-content] mr-0 ml-auto">
+        <div className="w-[100%] m-auto md:ml-auto md:mr-0">
           <h2 className="text-3xl font-bold mb-6 text-black">Why MYIIO ?</h2>
           <ul className="space-y-4">
             {points.map((point, i) => (

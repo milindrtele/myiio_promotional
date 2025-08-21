@@ -34,14 +34,17 @@ export default function KeyFeatures() {
 
   return (
     <section className="bg-[#EFFF00] py-16 px-8">
-      <div className="grid md:grid-cols-2 gap-12 items-center w-[72%] mx-auto">
+      <div className="grid md:grid-cols-2 gap-12 items-center w-[95%] md:w-[72%] mx-auto">
         {/* Left: Features */}
         <div>
           <h2 className="text-4xl font-bold mb-8 text-black">Key Features</h2>
           <div className="space-y-4 text-left text-wrap md:text-nowrap">
             {features.map((item, i) => (
-              <div key={i} className="flex  border-2 border-[#000000]">
-                <div className="bg-black text-white font-semibold px-4 py-2 w-[180px]">
+              <div
+                key={i}
+                className="flex flex-col md:flex-row border-2 border-[#000000]"
+              >
+                <div className="bg-black text-white font-semibold px-4 py-2 w-[100%] md:w-[180px]">
                   {item.title}
                 </div>
                 <div className="bg-white text-black px-4 py-2 flex-1">
