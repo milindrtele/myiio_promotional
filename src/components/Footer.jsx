@@ -14,14 +14,14 @@ export default function Footer() {
           </p>
           <div className="flex space-x-4 mt-6 text-xl justify-center items-center">
             {/* Social Media Icons */}
-            <div className="w-8 h-8 bg-gray-700 rounded"></div>
-            <div className="w-8 h-8 bg-gray-700 rounded"></div>
-            <div className="w-8 h-8 bg-gray-700 rounded"></div>
-            <div className="w-8 h-8 bg-gray-700 rounded"></div>
+            <div className="w-8 h-8 rounded social_media_icons s_m_1"></div>
+            <div className="w-8 h-8 rounded social_media_icons s_m_2"></div>
+            <div className="w-8 h-8 rounded social_media_icons s_m_3"></div>
+            <div className="w-8 h-8 rounded social_media_icons s_m_4"></div>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-10 mx-auto ">
+        <div className="grid md:grid-cols-3 gap-10 mx-auto justify-center text-center md:text-left">
           {/* Solutions */}
           <div className="flex flex-col justify-start md:items-start">
             <h3 className="font-semibold text-lg mb-4">Solutions</h3>

@@ -4,8 +4,8 @@ function HeroPage() {
       {/* Main Section */}
       <section className="grid md:grid-cols-2 gap-10 px-8 py-16 items-center w-[95%] md:w-[90%] h-[max-content] m-auto mt-[5%]">
         {/* Left: Image + Badge */}
-        <div className="mx-auto relative flex justify-center w-[100%] md:w-[80%] h-[50vh]">
-          <div className="box_image_nfc w-[20%] h-[20%] absolute  -top-6 -left-6 px-4 py-2"></div>
+        <div className="mx-auto relative flex justify-center w-[100%] md:w-[80%] h-[35vh] md:h-[50vh]">
+          <div className="box_image_nfc w-[20%] h-[20%] absolute -top-6 -left-6 px-4 py-2"></div>
           <div className="box_image"></div>
         </div>
 
