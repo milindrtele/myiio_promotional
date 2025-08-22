@@ -77,12 +77,12 @@ export default function UseCases() {
       <div className="grid xl:grid-cols-[60%_40%] items-center w-[95%] xl:w-[72%] mx-auto mt-20 xl:mt-16">
         {/* Left: Text Block */}
         <div className="bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[5px] border-[#355453] relative rounded-3xl p-8 shadow-lg">
-          <div className="hover_icon w-[20%] h-[20%] absolute -top-18 xl:-top-10 left-6 px-4 py-2"></div>
+          <div className="hover_icon w-[20%] h-[20%] absolute -top-15 xl:-top-10 left-6 px-4 py-2"></div>
           <div className="flex items-start gap-3 mb-4">
             {/* <div className="w-8 h-8 bg-black rounded flex items-center justify-center">
               <span className="text-white font-bold">☰</span>
             </div> */}
-            <h3 className="text-xl font-semibold">
+            <h3 className="text-xl font-semibold text-[#57c2c0] mt-[10%]">
               Seamless integration with HoloBox, Virtual Experience Centres, and
               VR Lounges
             </h3>
@@ -106,7 +106,7 @@ export default function UseCases() {
             alt="Holo-X"
             className="rounded-xl shadow-xl max-w-xs"
           /> */}
-          <div className="holox_image"></div>
+          <div className="holox_image mt-[10%] md:mt-0"></div>
         </div>
       </div>
     </section>
