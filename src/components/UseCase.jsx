@@ -42,14 +42,13 @@ export default function UseCases() {
         <h2 className="xl-text-7xl text-[#57c2c0]  font-bold mb-6 text-center uppercase tracking-wide">
           Enterprise and Professional Use Cases
         </h2>
-        <div className="grid xl:grid-cols-2 gap-4 text-sm xl:text-base">
+        <div className="grid xl:grid-cols-2 gap-16 text-sm xl:text-base">
           {cases.map((item, i) => (
             <div
               key={i}
-              className="flex flex-col xl:flex-row h-[max-content] xl:h-[100px] items-center border-b border-[#355453] last:border-b-0"
-            >
+              className="flex flex-col xl:flex-row h-[max-content] xl:h-[100px] items-center ">
               {/* Left Label */}
-              <div className="ml-0 mr-auto xl:ml-auto bg-teal-700 text-white px-4 py-3 font-semibold relative w-[100%] md:w-[150px] h-[100%] flex items-center justify-center">
+              <div className="ml-0 mr-auto xl:ml-auto bg-teal-700 text-white px-4 py-3 font-semibold relative w-[100%] xl:w-[150px] h-[100%] flex items-center justify-center">
                 {item.title}
                 {/* Little notch */}
                 <div
@@ -57,14 +56,13 @@ export default function UseCases() {
                 border-t-[10px] border-t-transparent 
                 border-b-[10px] border-b-transparent 
                 border-l-[10px] 
-                border-[#949699]"
-                ></div>
+                border-[#949699]"></div>
               </div>
               {/* <div className="bg-[#067a78] text-white font-semibold px-4 py-2 rounded-l-xl min-w-[180px] w-[200px]">
                 {item.title}
               </div> */}
               {/* Right Content */}
-              <div className="mx-auto md:ml-0 md:mr-auto xl:ml-auto w-[90%] md:w-[100%] xl:w-auto relative z-[1] flex-1 flex bg-gradient-to-b from-white to-gray-100 text-gray-800 px-6 py-4 rounded-b-2xl md:rounded-none md:rounded-r-2xl shadow-sm h-[85%] xl:h-[80%] m-auto items-center justify-center">
+              <div className="mx-auto xl:ml-0 xl:mr-auto xl:ml-auto w-[90%] xl:w-[100%] xl:w-auto relative z-[1] flex-1 flex bg-gradient-to-b from-white to-gray-100 text-gray-800 px-6 py-4 rounded-b-2xl xl:rounded-none xl:rounded-r-2xl shadow-sm h-[85%] xl:h-[80%] m-auto items-center justify-center">
                 <p className="items-center justify-center">{item.desc}</p>
               </div>
               {/* <div className="bg-white text-black px-4 py-2 rounded-r-xl flex-1">
@@ -76,10 +74,10 @@ export default function UseCases() {
       </div>
 
       {/* Seamless Integration Section */}
-      <div className="grid xl:grid-cols-2 gap-10 items-center w-[95%] md:w-[72%] mx-auto mt-20 md:mt-16">
+      <div className="grid xl:grid-cols-[60%_40%] items-center w-[95%] xl:w-[72%] mx-auto mt-20 xl:mt-16">
         {/* Left: Text Block */}
         <div className="bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[5px] border-[#355453] relative rounded-3xl p-8 shadow-lg">
-          <div className="hover_icon w-[20%] h-[20%] absolute -top-18 md:-top-10 left-6 px-4 py-2"></div>
+          <div className="hover_icon w-[20%] h-[20%] absolute -top-18 xl:-top-10 left-6 px-4 py-2"></div>
           <div className="flex items-start gap-3 mb-4">
             {/* <div className="w-8 h-8 bg-black rounded flex items-center justify-center">
               <span className="text-white font-bold">☰</span>

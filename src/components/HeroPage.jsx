@@ -2,19 +2,21 @@ function HeroPage() {
   return (
     <>
       {/* Main Section */}
-      <section className="grid md:grid-cols-2 gap-10 px-8 py-16 items-center w-[95%] md:w-[90%] h-[max-content] m-auto mt-[5%]">
+      <section className="grid xl:grid-cols-2 gap-10 px-8 py-16 items-center w-[95%] xl:w-[90%] h-[max-content] m-auto mt-[5%]">
         {/* Left: Image + Badge */}
-        <div className="mx-auto relative flex justify-center w-[100%] md:w-[80%] h-[35vh] md:h-[50vh]">
+        {/* <div className="w-[max-content] h-[max-content] m-auto relative"> */}
+        <div className="mx-auto relative flex justify-center w-[60vw] h-[60vw] xl:w-[80%] xl:h-[50vh]">
           <div className="box_image_nfc w-[20%] h-[20%] absolute -top-6 -left-6 px-4 py-2"></div>
           <div className="box_image"></div>
         </div>
+        {/* </div> */}
 
         {/* Right: Text */}
-        <div className="mx-auto flex flex-col w-[100%] md:w-[80%] justify-center">
-          <h2 className="text-4xl font-extrabold mb-6 text-black text-center">
+        <div className="mt-[15%] md:mt-0 mx-auto flex flex-col w-[100%] xl:w-[100%] justify-center">
+          <h2 className="text-4xl md:text-6xl font-extrabold mb-6 text-black text-center">
             About MYIIO Cloud
           </h2>
-          <p className="text-lg text-black mb-8 leading-relaxed text-justify">
+          <p className="text-xl text-black mb-8 leading-relaxed text-justify">
             Take full control of your media — encrypted playback, secure
             distribution, and immersive experiences — streamlined for enterprise
             use cases through a next-gen centralized platform, all without
@@ -23,11 +25,11 @@ function HeroPage() {
             built-in automation and simplified deployment — eliminating time
             lost to integration and overcoming technical challenges.
           </p>
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <button className="w-[70%] md:w-[40%] px-6 py-3 rounded-full bg-black text-white font-semibold hover:bg-gray-800 transition">
+          <div className="flex flex-col xl:flex-row justify-center items-center ">
+            <button className="m-auto w-[70%] xl:w-[40%] px-6 py-3 rounded-full bg-black text-white font-semibold hover:bg-gray-800 transition">
               Request a DEMO
             </button>
-            <button className="mt-[10%] w-[70%] md:mt-0 md:w-[40%] px-6 py-3 rounded-full bg-black text-white font-semibold hover:bg-gray-800 transition">
+            <button className="m-auto mt-[10%] w-[70%] xl:mt-0 xl:w-[40%] px-6 py-3 rounded-full bg-black text-white font-semibold hover:bg-gray-800 transition">
               Explore MORE
             </button>
           </div>

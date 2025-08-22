@@ -9,7 +9,7 @@ export default function KeyFeatures() {
       title: "Flexible Licensing",
       desc: "Time-based, device-bound, play-count restricted",
     },
-    { title: "Cross-Platform", desc: "Android, Windows, macOS, SBCs, HMDs" },
+    { title: "Cross-Platform", desc: "Android, Windows, macOS, SBCs, Hxls" },
     {
       title: "Shielded Security",
       desc: "AES-256 encryption + hardware binding",
@@ -34,17 +34,16 @@ export default function KeyFeatures() {
 
   return (
     <section className="bg-[#EFFF00] py-16 px-8">
-      <div className="grid md:grid-cols-2 gap-12 items-center w-[95%] md:w-[72%] mx-auto">
+      <div className="grid xl:grid-cols-2 gap-12 items-center w-[95%] xl:w-[72%] mx-auto">
         {/* Left: Features */}
         <div>
           <h2 className="text-4xl font-bold mb-8 text-black">Key Features</h2>
-          <div className="space-y-4 text-left text-wrap md:text-nowrap">
+          <div className="space-y-4 text-left text-wrap xl:text-nowrap">
             {features.map((item, i) => (
               <div
                 key={i}
-                className="flex flex-col md:flex-row border-2 border-[#000000]"
-              >
-                <div className="bg-black text-white font-semibold px-4 py-2 w-[100%] md:w-[180px]">
+                className="flex flex-col xl:flex-row border-2 border-[#000000]">
+                <div className="bg-black text-white font-semibold px-4 py-2 w-[100%] xl:w-[180px]">
                   {item.title}
                 </div>
                 <div className="bg-white text-black px-4 py-2 flex-1">
@@ -56,10 +55,17 @@ export default function KeyFeatures() {
         </div>
 
         {/* Right: Product Image */}
-        <div className="mx-auto md:mr-0 relative flex justify-end w-[80%] h-[max-content]">
+        {/* <div className="mx-auto xl:mr-0 relative flex justify-end w-[80%] h-[max-content]"> */}
+        <div className="mx-auto relative flex justify-center w-[60vw] h-[60vw] xl:w-[80%] xl:h-[50vh]">
           <div className="box_image_drm w-[20%] h-[20%] absolute -top-6 -left-6 px-4 py-2"></div>
-          <div className="box_image_key_features h-[5%] md:h-[20%]"></div>
+          <div className="box_image_key_features"></div>
+          {/* h-[5%] xl:h-[20%] */}
         </div>
+
+        {/* <div className="mx-auto relative flex justify-center w-[60vw] h-[60vw] xl:w-[80%] xl:h-[50vh]">
+          <div className="box_image_nfc w-[20%] h-[20%] absolute -top-6 -left-6 px-4 py-2"></div>
+          <div className="box_image"></div>
+        </div> */}
       </div>
     </section>
   );

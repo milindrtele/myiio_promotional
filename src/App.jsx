@@ -14,7 +14,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className="pt-8 min--screen bg-[#EFFF00] w-full h-[max-content] md:h-[100vh]">
+      <div className="pt-8 min--screen bg-[#EFFF00] w-full h-[max-content] xl:h-[100vh]">
         <div className="mx-auto w-[90%]">
           <Navbar />
           <HeroPage />
