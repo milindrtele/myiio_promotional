@@ -12,7 +12,7 @@ export default function Footer() {
           <p className="mt-4 text-gray-300">
             Enterprise Ready <br /> Encrypted Media
           </p>
-          <div className="flex space-x-4 mt-6 text-xl justify-center items-center">
+          <div className="flex space-x-12 xl:space-x-4 mt-6 text-xl justify-center items-center">
             {/* Social Media Icons */}
             <div className="w-8 h-8 rounded social_media_icons s_m_1"></div>
             <div className="w-8 h-8 rounded social_media_icons s_m_2"></div>
@@ -25,7 +25,7 @@ export default function Footer() {
           {/* Solutions */}
           <div className="flex flex-col justify-start xl:items-start">
             <h3 className="font-semibold text-lg mb-4">Solutions</h3>
-            <ul className="space-y-2 text-gray-300 flex flex-col justify-start xl:items-start">
+            <ul className="space-y-1 text-gray-300 flex flex-col justify-start xl:items-start">
               <li>
                 <a href="#">Custom Media Player</a>
               </li>
@@ -52,7 +52,7 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4 flex flex-col justify-start xl:items-start">
               Features
             </h3>
-            <ul className="space-y-2 text-gray-300 flex flex-col justify-start xl:items-start">
+            <ul className="space-y-1 text-gray-300 flex flex-col justify-start xl:items-start">
               <li>
                 <a href="#">Remote Dashboard</a>
               </li>
@@ -85,7 +85,7 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4 flex flex-col justify-start xl:items-start">
               Supports
             </h3>
-            <ul className="space-y-2 text-gray-300 flex flex-col justify-start xl:items-start">
+            <ul className="space-y-1 text-gray-300 flex flex-col justify-start xl:items-start">
               <li>
                 <a href="#">Download APK</a>
               </li>

@@ -11,7 +11,7 @@ export default function WhyMyiio() {
 
   return (
     <section className="bg-[#EFFF00] py-16 px-8">
-      <div className="grid xl:grid-cols-2 gap-10 items-center w-[72%] mx-auto">
+      <div className="grid xl:grid-cols-2 gap-10 items-center w-[90%] xl:w-[72%] mx-auto">
         {/* Left: Product Image */}
         <div className="flex justify-center">
           <div className="myiio_device"></div>

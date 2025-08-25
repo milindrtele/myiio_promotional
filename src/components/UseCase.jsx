@@ -42,7 +42,7 @@ export default function UseCases() {
         <h2 className="xl-text-7xl text-[#57c2c0]  font-bold mb-6 text-center uppercase tracking-wide">
           Enterprise and Professional Use Cases
         </h2>
-        <div className="grid xl:grid-cols-2 gap-16 text-sm xl:text-base">
+        <div className="grid xl:grid-cols-2 gap-8 xl:gap-16 text-sm xl:text-base">
           {cases.map((item, i) => (
             <div
               key={i}
@@ -52,7 +52,7 @@ export default function UseCases() {
                 {item.title}
                 {/* Little notch */}
                 <div
-                  className="absolute right-0 top-[35%] xl:top-0 translate-y-[0] translate-x-[100%] w-0 h-0 
+                  className="hidden xl:block absolute right-0 top-[35%] xl:top-0 translate-y-[0] translate-x-[100%] w-0 h-0 
                 border-t-[10px] border-t-transparent 
                 border-b-[10px] border-b-transparent 
                 border-l-[10px] 
@@ -106,7 +106,7 @@ export default function UseCases() {
             alt="Holo-X"
             className="rounded-xl shadow-xl max-w-xs"
           /> */}
-          <div className="holox_image mt-[10%] md:mt-0"></div>
+          <div className="holox_image mt-[20%] xl:mt-0 xl:mt-auto"></div>
         </div>
       </div>
     </section>

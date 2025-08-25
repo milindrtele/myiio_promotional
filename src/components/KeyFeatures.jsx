@@ -56,7 +56,7 @@ export default function KeyFeatures() {
 
         {/* Right: Product Image */}
         {/* <div className="mx-auto xl:mr-0 relative flex justify-end w-[80%] h-[max-content]"> */}
-        <div className="mx-auto relative flex justify-center w-[60vw] h-[60vw] xl:w-[80%] xl:h-[50vh]">
+        <div className="mx-auto relative flex justify-center w-[75vw] h-[75vw] xl:w-[80%] xl:h-[50vh]">
           <div className="box_image_drm w-[20%] h-[20%] absolute -top-6 -left-6 px-4 py-2"></div>
           <div className="box_image_key_features"></div>
           {/* h-[5%] xl:h-[20%] */}
