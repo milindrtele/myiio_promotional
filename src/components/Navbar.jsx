@@ -1,11 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../App.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isStuck, setIsStuck] = useState(false);
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!navRef.current) return;
+      const { top } = navRef.current.getBoundingClientRect();
+      setIsStuck(top <= 0); // stuck at top
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="flex items-center justify-between px-8 py-4 bg-black w-[100%] landscape:w-[90%] m-auto  landscape:left-0 h-[max-content] text-[2vh] landscape:text-[1.25vw]">
+    <nav
+      ref={navRef}
+      className={`flex items-center justify-between px-8 py-4 bg-black 
+    ${isStuck ? "w-full" : "landscape:w-[90%] w-full"} 
+    m-auto landscape:left-0 h-[max-content] text-[2vh] landscape:text-[1.25vw]`}>
       {/* Logo */}
       <div className="logo text-white font-bold "></div>
 
