@@ -38,7 +38,7 @@ export default function UseCases() {
   return (
     <section className="bg-[#143D3D] text-white py-16 px-8">
       {/* Enterprise Use Cases */}
-      <div className="w-[100%] landscape:w-[72%] mx-auto bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[10px] border-[#355453] relative rounded-3xl p-8 shadow-lg">
+      <div className="w-[100%] landscape:w-[80%] mx-auto bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[10px] border-[#355453] relative rounded-3xl p-8 shadow-lg">
         <h2 className="text-[2vh] landscape:text-[2vw] text-[#57c2c0]  font-bold mb-6 text-center uppercase tracking-wide">
           Enterprise and Professional Use Cases
         </h2>

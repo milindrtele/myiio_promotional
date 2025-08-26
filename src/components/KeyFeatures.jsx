@@ -37,7 +37,7 @@ export default function KeyFeatures() {
       <div className="grid landscape:grid-cols-[60%_40%] gap-12 items-center w-[95%] landscape:w-[72%] mx-auto">
         {/* Left: Features */}
         <div>
-          <h2 className="text-[2vh] landscape:text-[2vw] font-bold mb-8 text-black">
+          <h2 className="text-[3vh] landscape:text-[2vw] font-bold mb-8 text-black">
             Key Features
           </h2>
           <div className="space-y-4 text-[1.5vh] landscape:text-[1vw] text-left text-wrap landscape:text-nowrap">

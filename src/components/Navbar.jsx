@@ -20,7 +20,7 @@ function Navbar() {
   return (
     <nav
       ref={navRef}
-      className={`flex items-center justify-between px-8 py-4 bg-black 
+      className={`flex items-center justify-between px-8 py-2 bg-black 
     ${isStuck ? "w-full" : "landscape:w-[90%] w-full"} 
     m-auto landscape:left-0 h-[max-content] text-[2vh] landscape:text-[1.25vw]`}>
       {/* Logo */}
@@ -57,8 +57,8 @@ function Navbar() {
 
       {/* Desktop button */}
       <button
-        className="try_myiio_button mr-[5%] landscape:block ml-6 px-4 py-2 rounded-full text-black font-semibold bg-gradient-to-t from-green-400 to-teal-400 
-  hover:from-teal-500 hover:to-green-500 transition">
+        className="try_myiio_button landscape:w-[max-content] mr-[5%] portrait:mr-[5%] portrait:ml-auto landscape:block ml-6 px-4 py-2 rounded-full text-black font-semibold bg-gradient-to-t from-green-400 to-[#57c2c0]
+  hover:from-[#57c2c0] hover:to-green-500 transition">
         <p>Try MYIIO</p>
       </button>
 

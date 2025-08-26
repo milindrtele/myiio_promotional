@@ -2,17 +2,17 @@
 export default function Footer() {
   return (
     <footer className="bg-black text-white pt-12">
-      <div className="max-w-6xl mx-auto px-6 grid landscape:grid-cols-2 gap-10">
+      <div className="landscape:max-w-[80%] mx-auto px-6 grid landscape:grid-cols-[20%_80%] gap-10">
         {/* Left: Logo & Tagline */}
         <div className="flex flex-col items-center landscape:items-start">
           <div className="logo_footer"></div>
           {/* <h1 className="text-2xl font-bold">
             <span className="text-cyan-400">MYiiO</span>Cloud
           </h1> */}
-          <p className="mt-4 text-gray-300 text-[1.75vh]">
+          <p className="mt-4 landscape:ml-4 text-gray-300 text-[1.75vh]">
             Enterprise Ready <br /> Encrypted Media
           </p>
-          <div className="flex space-x-[10vw] landscape:space-x-4 mt-[5vw] text-[2vh] landscape:text-[2vw] justify-center items-center">
+          <div className="flex space-x-[10vw] landscape:ml-3.5 landscape:space-x-4 mt-[5vw] text-[2vh] landscape:text-[2vw] justify-center items-center">
             {/* Social Media Icons */}
             <div className="w-[4vh] h-[4vh] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_1"></div>
             <div className="w-[4vh] h-[4vh] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_2"></div>
@@ -21,13 +21,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid landscape:grid-cols-3 gap-10 mx-auto justify-center text-center landscape:text-left w-[max-content]">
+        {/* <div className="grid landscape:grid-cols-3 gap-10 m-auto landscape:mr-0 landscape:ml-auto justify-end text-center landscape:text-left w-[max-content]"> */}
+        <div className="flex landscape:flex-row flex-col m-auto landscape:mr-0 landscape:ml-auto justify-end text-center landscape:text-left w-[max-content]">
           {/* Solutions */}
-          <div className="flex flex-col justify-start landscape:items-start w-[max-content]">
+          <div className="flex flex-col w-[max-content] landscape:mx-[1vw]  portrait:mt-[15%]">
             <h3 className="font-semibold text-[2.5vh] landscape:text-[1.25vw] mb-4">
               Solutions
             </h3>
-            <ul className="space-y-1 text-gray-300 flex flex-col justify-start landscape:items-start text-[1.75vh]">
+            <ul className="space-y-1 text-gray-300 flex flex-col justify-start landscape:items-start text-[1.75vh] landscape:text-[0.70vw]">
               <li>
                 <a href="#">Digital Signage</a>
               </li>
@@ -59,11 +60,11 @@ export default function Footer() {
           </div>
 
           {/* Features */}
-          <div>
+          <div className="w-[max-content] mx-auto landscape:mx-[1vw]  portrait:mt-[15%]">
             <h3 className="font-semibold text-[2.5vh] landscape:text-[1.25vw] mb-4 flex flex-col justify-start landscape:items-start">
               Features
             </h3>
-            <ul className="space-y-1 text-gray-300 flex flex-col justify-start landscape:items-start text-[1.75vh]">
+            <ul className="space-y-1 text-gray-300 flex flex-col justify-start landscape:items-start text-[1.75vh] landscape:text-[0.70vw]">
               <li>
                 <a href="#">Remote Dashboard</a>
               </li>
@@ -92,11 +93,11 @@ export default function Footer() {
           </div>
 
           {/* Supports */}
-          <div>
+          <div className="w-[max-content] mx-auto landscape:mx-[1vw] portrait:mt-[15%]">
             <h3 className="font-semibold text-[2.5vh] landscape:text-[1.25vw] mb-4 flex flex-col justify-start landscape:items-start">
               Supports
             </h3>
-            <ul className="space-y-1 text-gray-300 flex flex-col justify-start landscape:items-start text-[1.75vh]">
+            <ul className="space-y-1 text-gray-300 flex flex-col justify-start landscape:items-start text-[1.75vh] landscape:text-[0.70vw]">
               <li>
                 <a href="#">Download APK</a>
               </li>
