@@ -14,16 +14,16 @@ export default function Footer() {
           </p>
           <div className="flex space-x-[10vw] landscape:space-x-4 mt-[5vw] text-[2vh] landscape:text-[2vw] justify-center items-center">
             {/* Social Media Icons */}
-            <div className="w-[5vw] h-[5vw] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_1"></div>
-            <div className="w-[5vw] h-[5vw] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_2"></div>
-            <div className="w-[5vw] h-[5vw] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_3"></div>
-            <div className="w-[5vw] h-[5vw] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_4"></div>
+            <div className="w-[4vh] h-[4vh] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_1"></div>
+            <div className="w-[4vh] h-[4vh] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_2"></div>
+            <div className="w-[4vh] h-[4vh] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_3"></div>
+            <div className="w-[4vh] h-[4vh] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_4"></div>
           </div>
         </div>
 
-        <div className="grid landscape:grid-cols-3 gap-10 mx-auto justify-center text-center landscape:text-left">
+        <div className="grid landscape:grid-cols-3 gap-10 mx-auto justify-center text-center landscape:text-left w-[max-content]">
           {/* Solutions */}
-          <div className="flex flex-col justify-start landscape:items-start">
+          <div className="flex flex-col justify-start landscape:items-start w-[max-content]">
             <h3 className="font-semibold text-[2.5vh] landscape:text-[1.25vw] mb-4">
               Solutions
             </h3>

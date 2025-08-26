@@ -48,7 +48,7 @@ export default function UseCases() {
               key={i}
               className="flex flex-col landscape:flex-row h-[max-content] landscape:h-[100px] items-center ">
               {/* Left Label */}
-              <div className="ml-0 mr-auto landscape:ml-auto bg-teal-700 text-white px-4 py-3 font-semibold relative w-[100%] landscape:w-[150px] h-[100%] flex items-center justify-center text-[1.5vh] ">
+              <div className="ml-0 mr-auto landscape:ml-auto bg-teal-700 text-white px-4 py-3 font-semibold relative w-[100%] landscape:w-[150px] h-[100%] flex items-center justify-center text-[1.5vh] landscape:text-[0.9vw]">
                 {item.title}
                 {/* Little notch */}
                 <div
@@ -62,7 +62,7 @@ export default function UseCases() {
                 {item.title}
               </div> */}
               {/* Right Content */}
-              <div className="mx-auto landscape:ml-0 landscape:mr-auto landscape:ml-auto w-[90%] landscape:w-[100%] landscape:w-auto relative z-[1] flex-1 flex bg-gradient-to-b from-white to-gray-100 text-gray-800 px-6 py-4 rounded-b-2xl landscape:rounded-none landscape:rounded-r-2xl shadow-sm h-[85%] landscape:h-[80%] m-auto items-center justify-center text-[1.5vh] landscape:text-[1.2vw]">
+              <div className="mx-auto landscape:ml-0 landscape:mr-auto landscape:ml-auto w-[90%] landscape:w-[100%] landscape:w-auto relative z-[1] flex-1 flex bg-gradient-to-b from-white to-gray-100 text-gray-800 px-6 py-4 rounded-b-2xl landscape:rounded-none landscape:rounded-r-2xl shadow-sm h-[85%] landscape:h-[80%] m-auto items-center justify-center text-[1.5vh] landscape:text-[0.8vw]">
                 <p className="items-center justify-center">{item.desc}</p>
               </div>
               {/* <div className="bg-white text-black px-4 py-2 rounded-r-xl flex-1">

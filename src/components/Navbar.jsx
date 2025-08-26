@@ -5,7 +5,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="relative z-1 flex items-center justify-between px-8 py-4 bg-black w-[100%] relative landscape:static landscape:w-full landscape:left-0 h-[max-content]">
+    <nav className="relative z-1 flex items-center justify-between px-8 py-4 bg-black w-[100%] relative landscape:static landscape:w-full landscape:left-0 h-[max-content] text-[2vh] landscape:text-[1.25vw]">
       {/* Logo */}
       <div className="logo text-white font-bold "></div>
 
@@ -61,7 +61,7 @@ function Navbar() {
 
       {/* Mobile dropdown menu */}
       {menuOpen && (
-        <div className="absolute text-xl top-full left-0 w-full bg-black flex flex-col items-center space-y-4 py-6 landscape:hidden">
+        <div className="absolute text-[2vh] landscape:text-[1.25vw] top-full left-0 w-full bg-black flex flex-col items-center space-y-4 py-6 landscape:hidden">
           <a href="#products" className="text-white hover:text-green-400">
             Products
           </a>

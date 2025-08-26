@@ -31,7 +31,7 @@ export default function WhyMyiio() {
             {points.map((point, i) => (
               <li key={i} className="flex items-start gap-3">
                 {/* <Check className="text-green-600 w-6 h-6 flex-shrink-0" /> */}
-                <div className="w-6 h-6 check_icon"></div>
+                <div className="w-[3vh] h-[3vh] check_icon"></div>
                 <span className="flex-1 text-[2vh] landscape:text-[1vw] text-black">
                   {point}
                 </span>
