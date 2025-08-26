@@ -14,9 +14,12 @@ import "./App.css";
 function App() {
   return (
     <>
+      <div className="sticky top-[-2vh] z-10 pt-[2vh] bg-[#EFFF00] w-full h-[max-content]">
+        <Navbar />
+      </div>
+
       <div className="pt-8 min--screen bg-[#EFFF00] w-full h-[max-content] landscape:h-[100vh]">
         <div className="mx-auto w-[90%]">
-          <Navbar />
           <HeroPage />
         </div>
       </div>

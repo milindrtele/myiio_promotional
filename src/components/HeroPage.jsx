@@ -2,7 +2,7 @@ function HeroPage() {
   return (
     <>
       {/* Main Section */}
-      <section className="grid landscape:grid-cols-2 gap-10 px-8 py-16 items-center w-[100%] landscape:w-[90%] h-[max-content] m-auto mt-[5%]">
+      <section className="grid landscape:grid-cols-2 gap-10 px-8 py-16 items-center w-[100%] landscape:w-[90%] h-[max-content] m-auto mt-[1%]">
         {/* Left: Image + Badge */}
         {/* <div className="w-[max-content] h-[max-content] m-auto relative"> */}
         <div className="mx-auto relative flex justify-center w-[75vw] h-[75vw] landscape:w-[80%] landscape:h-[50vh]">

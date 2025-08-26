@@ -5,7 +5,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="relative z-1 flex items-center justify-between px-8 py-4 bg-black w-[100%] relative landscape:static landscape:w-full landscape:left-0 h-[max-content] text-[2vh] landscape:text-[1.25vw]">
+    <nav className="flex items-center justify-between px-8 py-4 bg-black w-[100%] landscape:w-[90%] m-auto  landscape:left-0 h-[max-content] text-[2vh] landscape:text-[1.25vw]">
       {/* Logo */}
       <div className="logo text-white font-bold "></div>
 
