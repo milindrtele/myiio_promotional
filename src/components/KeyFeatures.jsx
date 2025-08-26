@@ -34,19 +34,21 @@ export default function KeyFeatures() {
 
   return (
     <section className="bg-[#EFFF00] py-16 px-8">
-      <div className="grid xl:grid-cols-2 gap-12 items-center w-[95%] xl:w-[72%] mx-auto">
+      <div className="grid landscape:grid-cols-[60%_40%] gap-12 items-center w-[95%] landscape:w-[72%] mx-auto">
         {/* Left: Features */}
         <div>
-          <h2 className="text-4xl font-bold mb-8 text-black">Key Features</h2>
-          <div className="space-y-4 text-left text-wrap xl:text-nowrap">
+          <h2 className="text-[2vh] landscape:text-[2vw] font-bold mb-8 text-black">
+            Key Features
+          </h2>
+          <div className="space-y-4 text-[1.5vh] landscape:text-[1vw] text-left text-wrap landscape:text-nowrap">
             {features.map((item, i) => (
               <div
                 key={i}
-                className="flex flex-col xl:flex-row border-2 border-[#000000]">
-                <div className="bg-black text-white font-semibold px-4 py-2 w-[100%] xl:w-[180px]">
+                className="flex flex-col landscape:flex-row border-2 border-[#000000]">
+                <div className="bg-black text-white font-semibold px-4 py-2 w-[100%] landscape:w-[35%]">
                   {item.title}
                 </div>
-                <div className="bg-white text-black px-4 py-2 flex-1">
+                <div className="bg-white text-black px-4 py-2 w-[max-content] flex-1 portrait:w-[100%] landscape:w-[65%]">
                   {item.desc}
                 </div>
               </div>
@@ -55,14 +57,14 @@ export default function KeyFeatures() {
         </div>
 
         {/* Right: Product Image */}
-        {/* <div className="mx-auto xl:mr-0 relative flex justify-end w-[80%] h-[max-content]"> */}
-        <div className="mx-auto relative flex justify-center w-[75vw] h-[75vw] xl:w-[80%] xl:h-[50vh]">
+        {/* <div className="mx-auto landscape:mr-0 relative flex justify-end w-[80%] h-[max-content]"> */}
+        <div className="mx-auto relative flex justify-center w-[75vw] h-[75vw] landscape:w-[80%] landscape:h-[50vh]">
           <div className="box_image_drm w-[20%] h-[20%] absolute -top-6 -left-6 px-4 py-2"></div>
           <div className="box_image_key_features"></div>
-          {/* h-[5%] xl:h-[20%] */}
+          {/* h-[5%] landscape:h-[20%] */}
         </div>
 
-        {/* <div className="mx-auto relative flex justify-center w-[60vw] h-[60vw] xl:w-[80%] xl:h-[50vh]">
+        {/* <div className="mx-auto relative flex justify-center w-[60vw] h-[60vw] landscape:w-[80%] landscape:h-[50vh]">
           <div className="box_image_nfc w-[20%] h-[20%] absolute -top-6 -left-6 px-4 py-2"></div>
           <div className="box_image"></div>
         </div> */}

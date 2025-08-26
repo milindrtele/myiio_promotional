@@ -53,27 +53,25 @@ function FAQ() {
 
   return (
     <section className="w-full bg-[#143D3D] text-white py-12 px-6">
-      <h2 className="text-center text-6xl text-[#57c2c0] font-bold mb-10">
+      <h2 className="text-center text-[4vh] landscape:text-[4vw] text-[#57c2c0] font-bold mb-10">
         F. A. Q.
       </h2>
-      <div className="mx-auto bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[5px] border-[#355453] relative rounded-3xl p-8 shadow-lg w-[95%] xl:w-[72%]">
-        <div className="w-[95%] xl:w-[85%] mx-auto space-y-4">
+      <div className="mx-auto bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[5px] border-[#355453] relative rounded-3xl p-8 shadow-lg w-[95%] landscape:w-[72%]">
+        <div className="w-[95%] landscape:w-[85%] mx-auto space-y-4">
           {faqs.map((item, index) => (
             <div
               key={index}
-              className="bg-[#234a4a] rounded-lg shadow p-4 cursor-pointer"
-            >
+              className="bg-[#234a4a] rounded-lg shadow p-4 cursor-pointer">
               <div
-                className="flex  items-center"
-                onClick={() => toggleFAQ(index)}
-              >
-                <span className="text-xl font-bold">
+                className="flex text-[1.5vh] landscape:text-[1.25vw] items-center"
+                onClick={() => toggleFAQ(index)}>
+                <span className="font-bold">
                   {openIndex === index ? "−" : "+"}
                 </span>
-                <span className="font-medium ml-5">{item.question}</span>
+                <span className="ml-5">{item.question}</span>
               </div>
               {openIndex === index && (
-                <p className="mt-3 text-sm text-gray-200 leading-relaxed text text-left ml-9">
+                <p className="mt-3 text-[1.5vh] landscape:text-[1.25vw] text-gray-200 leading-relaxed text text-left ml-9">
                   {item.answer}
                 </p>
               )}

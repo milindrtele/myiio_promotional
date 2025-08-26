@@ -38,21 +38,21 @@ export default function UseCases() {
   return (
     <section className="bg-[#143D3D] text-white py-16 px-8">
       {/* Enterprise Use Cases */}
-      <div className="w-[100%] xl:w-[72%] mx-auto bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[10px] border-[#355453] relative rounded-3xl p-8 shadow-lg">
-        <h2 className="xl-text-7xl text-[#57c2c0]  font-bold mb-6 text-center uppercase tracking-wide">
+      <div className="w-[100%] landscape:w-[72%] mx-auto bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[10px] border-[#355453] relative rounded-3xl p-8 shadow-lg">
+        <h2 className="text-[2vh] landscape:text-[2vw] text-[#57c2c0]  font-bold mb-6 text-center uppercase tracking-wide">
           Enterprise and Professional Use Cases
         </h2>
-        <div className="grid xl:grid-cols-2 gap-8 xl:gap-16 text-sm xl:text-base">
+        <div className="grid landscape:grid-cols-2 gap-8 landscape:gap-16 text-[1.25vh] landscape:text-[1.25vw] landscape:text-base">
           {cases.map((item, i) => (
             <div
               key={i}
-              className="flex flex-col xl:flex-row h-[max-content] xl:h-[100px] items-center ">
+              className="flex flex-col landscape:flex-row h-[max-content] landscape:h-[100px] items-center ">
               {/* Left Label */}
-              <div className="ml-0 mr-auto xl:ml-auto bg-teal-700 text-white px-4 py-3 font-semibold relative w-[100%] xl:w-[150px] h-[100%] flex items-center justify-center">
+              <div className="ml-0 mr-auto landscape:ml-auto bg-teal-700 text-white px-4 py-3 font-semibold relative w-[100%] landscape:w-[150px] h-[100%] flex items-center justify-center text-[1.5vh] ">
                 {item.title}
                 {/* Little notch */}
                 <div
-                  className="hidden xl:block absolute right-0 top-[35%] xl:top-0 translate-y-[0] translate-x-[100%] w-0 h-0 
+                  className="hidden landscape:block absolute right-0 top-[35%] landscape:top-0 translate-y-[0] translate-x-[100%] w-0 h-0 
                 border-t-[10px] border-t-transparent 
                 border-b-[10px] border-b-transparent 
                 border-l-[10px] 
@@ -62,7 +62,7 @@ export default function UseCases() {
                 {item.title}
               </div> */}
               {/* Right Content */}
-              <div className="mx-auto xl:ml-0 xl:mr-auto xl:ml-auto w-[90%] xl:w-[100%] xl:w-auto relative z-[1] flex-1 flex bg-gradient-to-b from-white to-gray-100 text-gray-800 px-6 py-4 rounded-b-2xl xl:rounded-none xl:rounded-r-2xl shadow-sm h-[85%] xl:h-[80%] m-auto items-center justify-center">
+              <div className="mx-auto landscape:ml-0 landscape:mr-auto landscape:ml-auto w-[90%] landscape:w-[100%] landscape:w-auto relative z-[1] flex-1 flex bg-gradient-to-b from-white to-gray-100 text-gray-800 px-6 py-4 rounded-b-2xl landscape:rounded-none landscape:rounded-r-2xl shadow-sm h-[85%] landscape:h-[80%] m-auto items-center justify-center text-[1.5vh] landscape:text-[1.2vw]">
                 <p className="items-center justify-center">{item.desc}</p>
               </div>
               {/* <div className="bg-white text-black px-4 py-2 rounded-r-xl flex-1">
@@ -74,20 +74,20 @@ export default function UseCases() {
       </div>
 
       {/* Seamless Integration Section */}
-      <div className="grid xl:grid-cols-[60%_40%] items-center w-[95%] xl:w-[72%] mx-auto mt-20 xl:mt-16">
+      <div className="grid landscape:grid-cols-[60%_40%] items-center w-[95%] landscape:w-[72%] mx-auto mt-20 landscape:mt-16">
         {/* Left: Text Block */}
         <div className="bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[5px] border-[#355453] relative rounded-3xl p-8 shadow-lg">
-          <div className="hover_icon w-[20%] h-[20%] absolute -top-15 xl:-top-10 left-6 px-4 py-2"></div>
+          <div className="hover_icon w-[20%] h-[20%] absolute -top-15 landscape:-top-10 left-6 px-4 py-2"></div>
           <div className="flex items-start gap-3 mb-4">
             {/* <div className="w-8 h-8 bg-black rounded flex items-center justify-center">
               <span className="text-white font-bold">☰</span>
             </div> */}
-            <h3 className="text-xl font-semibold text-[#57c2c0] mt-[10%]">
+            <h3 className="text-[2vh] landscape:text-[1.5vw] font-semibold text-[#57c2c0] mt-[10%]">
               Seamless integration with HoloBox, Virtual Experience Centres, and
               VR Lounges
             </h3>
           </div>
-          <p className="text-gray-200 text-lg leading-relaxed">
+          <p className="text-gray-200 text-[1.5vh] landscape:text-[1.2vw] leading-relaxed">
             Enabling secure, high-quality immersive experiences for
             entertainment, training, and exhibitions. MYIIO Cloud ensures
             seamless integration with platforms like HoloBox, Virtual Experience
@@ -106,7 +106,7 @@ export default function UseCases() {
             alt="Holo-X"
             className="rounded-xl shadow-xl max-w-xs"
           /> */}
-          <div className="holox_image mt-[20%] xl:mt-0 xl:mt-auto"></div>
+          <div className="holox_image mt-[20%] landscape:mt-0 landscape:mt-auto"></div>
         </div>
       </div>
     </section>

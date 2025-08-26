@@ -11,7 +11,7 @@ export default function WhyMyiio() {
 
   return (
     <section className="bg-[#EFFF00] py-16 px-8">
-      <div className="grid xl:grid-cols-2 gap-10 items-center w-[90%] xl:w-[72%] mx-auto">
+      <div className="grid landscape:grid-cols-2 gap-10 items-center w-[90%] landscape:w-[72%] mx-auto">
         {/* Left: Product Image */}
         <div className="flex justify-center">
           <div className="myiio_device"></div>
@@ -23,14 +23,18 @@ export default function WhyMyiio() {
         </div>
 
         {/* Right: Content */}
-        <div className="xl:w-[50%] m-auto">
-          <h2 className="text-3xl font-bold mb-6 text-black">Why MYIIO ?</h2>
+        <div className="landscape:w-[50%] m-auto">
+          <h2 className="text-[2.5vh] landscape:text-[2vw]  font-bold mb-6 text-black">
+            Why MYIIO ?
+          </h2>
           <ul className="space-y-4">
             {points.map((point, i) => (
               <li key={i} className="flex items-start gap-3">
                 {/* <Check className="text-green-600 w-6 h-6 flex-shrink-0" /> */}
                 <div className="w-6 h-6 check_icon"></div>
-                <span className="flex-1 text-lg text-black">{point}</span>
+                <span className="flex-1 text-[2vh] landscape:text-[1vw] text-black">
+                  {point}
+                </span>
               </li>
             ))}
           </ul>

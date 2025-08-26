@@ -2,57 +2,68 @@
 export default function Footer() {
   return (
     <footer className="bg-black text-white pt-12">
-      <div className="max-w-6xl mx-auto px-6 grid xl:grid-cols-2 gap-10">
+      <div className="max-w-6xl mx-auto px-6 grid landscape:grid-cols-2 gap-10">
         {/* Left: Logo & Tagline */}
-        <div className="flex flex-col items-center xl:items-start">
+        <div className="flex flex-col items-center landscape:items-start">
           <div className="logo_footer"></div>
           {/* <h1 className="text-2xl font-bold">
             <span className="text-cyan-400">MYiiO</span>Cloud
           </h1> */}
-          <p className="mt-4 text-gray-300">
+          <p className="mt-4 text-gray-300 text-[1.75vh]">
             Enterprise Ready <br /> Encrypted Media
           </p>
-          <div className="flex space-x-12 xl:space-x-4 mt-6 text-xl justify-center items-center">
+          <div className="flex space-x-[10vw] landscape:space-x-4 mt-[5vw] text-[2vh] landscape:text-[2vw] justify-center items-center">
             {/* Social Media Icons */}
-            <div className="w-8 h-8 rounded social_media_icons s_m_1"></div>
-            <div className="w-8 h-8 rounded social_media_icons s_m_2"></div>
-            <div className="w-8 h-8 rounded social_media_icons s_m_3"></div>
-            <div className="w-8 h-8 rounded social_media_icons s_m_4"></div>
+            <div className="w-[5vw] h-[5vw] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_1"></div>
+            <div className="w-[5vw] h-[5vw] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_2"></div>
+            <div className="w-[5vw] h-[5vw] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_3"></div>
+            <div className="w-[5vw] h-[5vw] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_4"></div>
           </div>
         </div>
 
-        <div className="grid xl:grid-cols-3 gap-10 mx-auto justify-center text-center xl:text-left">
+        <div className="grid landscape:grid-cols-3 gap-10 mx-auto justify-center text-center landscape:text-left">
           {/* Solutions */}
-          <div className="flex flex-col justify-start xl:items-start">
-            <h3 className="font-semibold text-lg mb-4">Solutions</h3>
-            <ul className="space-y-1 text-gray-300 flex flex-col justify-start xl:items-start">
-              <li>
-                <a href="#">Custom Media Player</a>
-              </li>
+          <div className="flex flex-col justify-start landscape:items-start">
+            <h3 className="font-semibold text-[2.5vh] landscape:text-[1.25vw] mb-4">
+              Solutions
+            </h3>
+            <ul className="space-y-1 text-gray-300 flex flex-col justify-start landscape:items-start text-[1.75vh]">
               <li>
                 <a href="#">Digital Signage</a>
               </li>
               <li>
-                <a href="#">E-Cinema</a>
+                <a href="#">Interactive Kiosk Solutions</a>
               </li>
               <li>
-                <a href="#">Interactive Display</a>
+                <a href="#">Pre-Cinema / Ad Playback</a>
               </li>
               <li>
-                <a href="#">White Label</a>
+                <a href="#">Retail & In-Store Media</a>
               </li>
               <li>
-                <a href="#">Menu_Items</a>
+                <a href="#">Healthcare Media Solutions</a>
+              </li>
+              <li>
+                <a href="#">Hospitality Media Solutions</a>
+              </li>
+              <li>
+                <a href="#">Corporate Learning Platforms</a>
+              </li>
+              <li>
+                <a href="#">Govt. & Public Info Systems</a>
+              </li>
+              <li>
+                <a href="#">OEM / White Label</a>
               </li>
             </ul>
           </div>
 
           {/* Features */}
           <div>
-            <h3 className="font-semibold text-lg mb-4 flex flex-col justify-start xl:items-start">
+            <h3 className="font-semibold text-[2.5vh] landscape:text-[1.25vw] mb-4 flex flex-col justify-start landscape:items-start">
               Features
             </h3>
-            <ul className="space-y-1 text-gray-300 flex flex-col justify-start xl:items-start">
+            <ul className="space-y-1 text-gray-300 flex flex-col justify-start landscape:items-start text-[1.75vh]">
               <li>
                 <a href="#">Remote Dashboard</a>
               </li>
@@ -82,10 +93,10 @@ export default function Footer() {
 
           {/* Supports */}
           <div>
-            <h3 className="font-semibold text-lg mb-4 flex flex-col justify-start xl:items-start">
+            <h3 className="font-semibold text-[2.5vh] landscape:text-[1.25vw] mb-4 flex flex-col justify-start landscape:items-start">
               Supports
             </h3>
-            <ul className="space-y-1 text-gray-300 flex flex-col justify-start xl:items-start">
+            <ul className="space-y-1 text-gray-300 flex flex-col justify-start landscape:items-start text-[1.75vh]">
               <li>
                 <a href="#">Download APK</a>
               </li>
@@ -110,7 +121,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Copyright Bar */}
-      <div className="bg-[#57c2c0] text-center py-4 mt-12 text-black text-sm font-medium">
+      <div className="bg-[#57c2c0] text-center py-4 mt-12 text-black text-[1.25vh] landscape:text-[1vw] font-medium">
         © 2025 Metavian Technologies Pvt. Ltd.
       </div>
     </footer>

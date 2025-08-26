@@ -25,24 +25,26 @@ export default function Partnership() {
 
   return (
     <section className="bg-[#143D3D] text-white py-16 ">
-      <div className="grid xl:grid-cols-2 gap-12 items-center w-[95%] xl:w-[72%] mx-auto">
+      <div className="grid landscape:grid-cols-2 gap-12 items-center w-[95%] landscape:w-[72%] mx-auto">
         {/* Left: Product Image */}
         <div className="flex justify-center">
           <div className="kiosk_image"></div>
         </div>
         {/* Right: Content */}
         <div>
-          <h2 className="text-5xl font-bold mb-0 mt-[10%] text-cyan-400 text-center">
+          <h2 className="text-[3.5vh] landscape:text-[2vw] font-bold mb-0 mt-[10%] text-cyan-400 text-center">
             Partnership Framework
           </h2>
 
-          <div className="mt-[12%] xl:mt-[10%] bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[5px] border-[#355453] relative rounded-3xl p-6 shadow-lg">
+          <div className="mt-[15%] landscape:mt-[10%] bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[5px] border-[#355453] relative rounded-3xl p-6 shadow-lg">
             {/* Icon placeholder */}
-            <div className="hover_icon w-[20%] h-[20%] absolute -top-15 xl:-top-12 left-6 px-4 py-2"></div>
+            <div className="hover_icon w-[20%] h-[20%] absolute -top-15 landscape:-top-12 left-6 px-4 py-2"></div>
 
             <ul className="space-y-4 mt-[10%]">
               {items.map((item, i) => (
-                <li key={i} className="text-gray-200 text-xl ">
+                <li
+                  key={i}
+                  className="text-gray-200 text-[1.75vh] landscape:text-[1.1vw]  ">
                   <span className="font-semibold text-[#57c2c0]">
                     {item.title}
                   </span>
