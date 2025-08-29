@@ -14,7 +14,10 @@ export default function FreeTrial() {
         <a
           href="#trial"
           className="w-[100%] landscape:w-[30%] justify-center text-center bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-900 transition text-[2vh] landscape:text-[1.5vw]">
-          Start Your <span className="underline">Free Trial</span>
+          <span className="text-[1.5vh] landscape:text-[1.25vw] font-normal">
+            Start Your{" "}
+          </span>
+          <span className="underline ">Free Trial</span>
         </a>
       </div>
     </section>

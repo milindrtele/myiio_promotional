@@ -2,47 +2,81 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "What types of media does MYIIO Cloud support?",
+    question: "What types of media does MYiiO Cloud support?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "MYiiO Cloud supports a wide range of formats including standard HD, 4K, 8K, stereoscopic 3D SBS, VR180, and VR360° video. It is optimized for head-mounted displays (Apple Vision Pro, Meta Quest, HTC Vive, Pico, Magic Leap, etc.) and also integrates with holographic displays such as Looking Glass, HoloConnects, and Holobox devices.",
   },
   {
     question:
       "How can I update remote app or install/update other apps remotely?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "MYiiO Cloud provides SDKs and APIs for custom integration, allowing enterprises to remotely manage apps and immersive applications. With smart distribution through MuZziio SDUs or cloud-hosted vaults, apps and updates can be securely pushed to devices without requiring physical intervention.",
   },
   {
     question: "How can content be updated remotely?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Content can be distributed and updated remotely through MYiiO Cloud using encrypted vaults or via MuZziio Smart Distribution Units (SDUs). Updates can be managed with DRM controls such as time-limited or geo-fenced access, ensuring only authorized users and devices receive the new content.",
   },
   {
-    question: "Does MYIIO Cloud support white-label solutions?",
+    question: "Does MYiiO Cloud support white-label solutions?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Praesent libero.",
+      "Yes. MYiiO Cloud offers full white-label options for institutions and enterprises, enabling custom branding of the player, apps, and distribution platform. Enterprises can deploy MYiiO under their own identity while retaining MYiiO’s secure infrastructure.",
   },
   {
-    question: "Can offline playback be supported by MYIIO cloud?",
+    question: "Can offline playback be supported by MYiiO cloud?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam felis, ultricies nec.",
+      "Yes. MYiiO supports offline playback through device-bound encryption and DRM. This makes it ideal for air-gapped or high-security environments where internet connectivity is restricted, such as exhibitions, confidential screenings, and government use cases.",
   },
   {
-    question: "What are the various licensing models for MYIIO cloud?",
+    question: "What are the various licensing models for MYiiO cloud?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti.",
-  },
-  {
-    question: "What are the various licensing models for MYIIO cloud?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat.",
-  },
-  {
-    question: "How can content be updated remotely?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet orci eget eros.",
+      "MYiiO supports flexible licensing models including single-use, time-limited, geo-fenced, or lifetime access. Additional options include device-bound playback, NFC-based access (per device or per user), and playback count restrictions. Licensing can be tailored for enterprises, studios, or institutions.",
   },
 ];
+
+// const faqs = [
+//   {
+//     question: "What types of media does MYiiO Cloud support?",
+//     answer:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+//   },
+//   {
+//     question:
+//       "How can I update remote app or install/update other apps remotely?",
+//     answer:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+//   },
+//   {
+//     question: "How can content be updated remotely?",
+//     answer:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+//   },
+//   {
+//     question: "Does MYiiO Cloud support white-label solutions?",
+//     answer:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Praesent libero.",
+//   },
+//   {
+//     question: "Can offline playback be supported by MYiiO cloud?",
+//     answer:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam felis, ultricies nec.",
+//   },
+//   {
+//     question: "What are the various licensing models for MYiiO cloud?",
+//     answer:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti.",
+//   },
+//   {
+//     question: "What are the various licensing models for MYiiO cloud?",
+//     answer:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat.",
+//   },
+//   {
+//     question: "How can content be updated remotely?",
+//     answer:
+//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet orci eget eros.",
+//   },
+// ];
 
 function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);

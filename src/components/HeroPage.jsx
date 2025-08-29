@@ -2,7 +2,7 @@ function HeroPage() {
   return (
     <>
       {/* Main Section */}
-      <section className="grid landscape:grid-cols-2 gap-10 px-8 py-16 items-center w-[100%] landscape:w-[90%] h-[max-content] m-auto mt-[1%]">
+      <section className="grid landscape:grid-cols-2 gap-10 px-8 py-16 items-center w-[100%] landscape:w-[90%] h-[max-content] m-auto mt-[4%]">
         {/* Left: Image + Badge */}
         {/* <div className="w-[max-content] h-[max-content] m-auto relative"> */}
         <div className="mx-auto relative flex justify-center w-[75vw] h-[75vw] landscape:w-[100%] landscape:h-[100%]">
@@ -13,8 +13,8 @@ function HeroPage() {
 
         {/* Right: Text */}
         <div className="mt-[15%] md:mt-0 mx-auto flex flex-col w-[100%] landscape:w-[100%] justify-center">
-          <h2 className="text-4xl text-[4vh] landscape:text-[4vw] font-extrabold mb-6 text-black text-center">
-            About MYIIO Cloud
+          <h2 className="text-4xl text-[4vh] landscape:text-[4vw] font-extrabold mb-6 text-black text-center text-nowrap">
+            About MYiiO Cloud
           </h2>
           <p className="text-[1.75vh] landscape:text-[1.25vw] text-black mb-8 leading-relaxed text-justify">
             Take full control of your media — encrypted playback, secure

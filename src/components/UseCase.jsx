@@ -1,4 +1,5 @@
-// src/components/UseCases.jsx
+import { useState, useRef, useEffect } from "react";
+
 export default function UseCases() {
   const cases = [
     {
@@ -35,6 +36,9 @@ export default function UseCases() {
     },
   ];
 
+  const hoveringItemRef = useRef(null);
+  const [itemHovered, setItemHovered] = useState(false);
+
   return (
     <section className="bg-[#143D3D] text-white py-16 px-8">
       {/* Enterprise Use Cases */}
@@ -45,10 +49,13 @@ export default function UseCases() {
         <div className="grid landscape:grid-cols-2 gap-8 landscape:gap-16 text-[1.25vh] landscape:text-[1.25vw] landscape:text-base">
           {cases.map((item, i) => (
             <div
+              ref={hoveringItemRef}
               key={i}
-              className="flex flex-col landscape:flex-row h-[max-content] landscape:h-[100px] items-center ">
+              onMouseEnter={() => setItemHovered(i)}
+              onMouseLeave={() => setItemHovered(null)}
+              className="portrait:flex portrait:flex-col landscape:flex landscape:flex-row h-[max-content] landscape:h-[100px] items-center ">
               {/* Left Label */}
-              <div className="ml-0 mr-auto landscape:ml-auto bg-teal-700 text-white px-4 py-3 font-semibold relative w-[100%] landscape:w-[150px] h-[100%] flex items-center justify-center text-[1.5vh] landscape:text-[0.9vw]">
+              <div className=" ml-0 mr-0 landscape:ml-0 bg-teal-700 text-white px-4 py-3 font-semibold relative w-[80%]  landscape:w-[50%]  landscape:w-[150px] h-[100%] flex items-center landscape:justify-start justify-center text-[1.5vh] landscape:text-[0.9vw]">
                 {item.title}
                 {/* Little notch */}
                 <div
@@ -62,8 +69,24 @@ export default function UseCases() {
                 {item.title}
               </div> */}
               {/* Right Content */}
-              <div className="mx-auto landscape:ml-0 landscape:mr-auto landscape:ml-auto w-[90%] landscape:w-[100%] landscape:w-auto relative z-[1] flex-1 flex bg-gradient-to-b from-white to-gray-100 text-gray-800 px-6 py-4 rounded-b-2xl landscape:rounded-none landscape:rounded-r-2xl shadow-sm h-[85%] landscape:h-[80%] m-auto items-center justify-center text-[1.5vh] landscape:text-[0.8vw]">
-                <p className="items-center justify-center">{item.desc}</p>
+              <div
+                className={`landscape:ml-0 landscape:mr-auto w-[70%] landscape:w-[10%] 
+                relative z-[1] flex bg-gradient-to-b from-white to-gray-100 text-gray-800 px-6 py-4 
+                rounded-b-2xl landscape:rounded-none landscape:rounded-r-2xl shadow-sm h-[85%] 
+                landscape:h-[80%] text-[1.5vh] landscape:text-[0.8vw] transition-all duration-500 ease-in-out
+                ${
+                  itemHovered === i
+                    ? "landscape:w-[70%] bg-gradient-to-r from-gray-100 to-gray-300"
+                    : "landscape:w-[10%]"
+                }`}>
+                <p
+                  className={`transition-all portrait:opacity-100 text-center ${
+                    itemHovered === i
+                      ? "opacity-100 duration-500 delay-500 ease-in-out "
+                      : "opacity-0"
+                  }`}>
+                  {item.desc}
+                </p>
               </div>
               {/* <div className="bg-white text-black px-4 py-2 rounded-r-xl flex-1">
                 {item.desc}
@@ -89,7 +112,7 @@ export default function UseCases() {
           </div>
           <p className="text-gray-200 text-[1.5vh] landscape:text-[1.2vw] leading-relaxed">
             Enabling secure, high-quality immersive experiences for
-            entertainment, training, and exhibitions. MYIIO Cloud ensures
+            entertainment, training, and exhibitions. MYiiO Cloud ensures
             seamless integration with platforms like HoloBox, Virtual Experience
             Centres, and VR Lounges. From showcasing products in lifelike
             holographic displays to delivering VR-based learning and interactive

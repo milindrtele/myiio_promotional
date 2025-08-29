@@ -14,10 +14,22 @@ export default function Footer() {
           </p>
           <div className="flex space-x-[10vw] landscape:ml-3.5 landscape:space-x-4 mt-[5vw] text-[2vh] landscape:text-[2vw] justify-center items-center">
             {/* Social Media Icons */}
-            <div className="w-[4vh] h-[4vh] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_1"></div>
-            <div className="w-[4vh] h-[4vh] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_2"></div>
-            <div className="w-[4vh] h-[4vh] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_3"></div>
-            <div className="w-[4vh] h-[4vh] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_4"></div>
+            <a target="_blank" href="https://www.instagram.com/metaviantech/">
+              <div className="w-[4vh] h-[4vh] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_1 relative hover:top-[10%] transition duration-300 ease-in-out"></div>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/metaviantech">
+              <div className="w-[4vh] h-[4vh] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_2"></div>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/@metaviantechnologies">
+              <div className="w-[4vh] h-[4vh] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_3"></div>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/metavian-technologies/">
+              <div className="w-[4vh] h-[4vh] landscape:w-8 landscape:h-8 rounded social_media_icons s_m_4"></div>
+            </a>
           </div>
         </div>
 
@@ -122,7 +134,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Copyright Bar */}
-      <div className="bg-[#57c2c0] text-center py-4 mt-12 text-black text-[1.25vh] landscape:text-[1vw] font-medium">
+      <div className="bg-[#57c2c0] text-center py-1 mt-12 text-black text-[1vh] landscape:text-[0.75vw] font-medium">
         © 2025 Metavian Technologies Pvt. Ltd.
       </div>
     </footer>

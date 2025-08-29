@@ -1,4 +1,5 @@
-// src/components/KeyFeatures.jsx
+import { useState, useRef, useEffect } from "react";
+
 export default function KeyFeatures() {
   const features = [
     {
@@ -34,7 +35,7 @@ export default function KeyFeatures() {
 
   return (
     <section className="bg-[#EFFF00] py-16 px-8">
-      <div className="grid landscape:grid-cols-[60%_40%] gap-12 items-center w-[95%] landscape:w-[80%] mx-auto">
+      <div className="grid landscape:grid-cols-[50%_50%] gap-12 items-center w-[95%] landscape:w-[80%] mx-auto">
         {/* Left: Features */}
         <div>
           <h2 className="text-[3vh] landscape:text-[2vw] font-bold mb-8 text-black">
@@ -58,7 +59,7 @@ export default function KeyFeatures() {
 
         {/* Right: Product Image */}
         {/* <div className="mx-auto landscape:mr-0 relative flex justify-end w-[80%] h-[max-content]"> */}
-        <div className="mx-auto relative flex justify-center w-[75vw] h-[75vw] landscape:w-[80%] landscape:h-[60vh] landscape:mt-[9vw]">
+        <div className="mx-auto relative flex justify-center w-[75vw] h-[75vw] landscape:w-[95%] landscape:h-[95%] mb-0 mt-auto">
           <div className="box_image_drm w-[20%] h-[20%] absolute -top-6 -left-6 px-4 py-2"></div>
           <div className="box_image_key_features"></div>
           {/* h-[5%] landscape:h-[20%] */}

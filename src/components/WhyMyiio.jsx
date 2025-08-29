@@ -24,15 +24,15 @@ export default function WhyMyiio() {
 
         {/* Right: Content */}
         <div className="landscape:w-[50%] m-auto">
-          <h2 className="text-[2.5vh] landscape:text-[2.5vw]  font-bold mb-6 text-black">
-            Why MYIIO ?
+          <h2 className="text-[2.5vh] landscape:text-[2vw]  font-bold mb-6 text-black">
+            Why MYiiO ?
           </h2>
           <ul className="space-y-4">
             {points.map((point, i) => (
               <li key={i} className="flex items-start gap-3">
                 {/* <Check className="text-green-600 w-6 h-6 flex-shrink-0" /> */}
                 <div className="w-[3vh] h-[3vh] check_icon"></div>
-                <span className="flex-1 text-[2vh] landscape:text-[1.2vw] text-black">
+                <span className="flex-1 text-[2vh] landscape:text-[1vw] text-black">
                   {point}
                 </span>
               </li>

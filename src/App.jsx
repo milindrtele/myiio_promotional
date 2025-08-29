@@ -1,4 +1,5 @@
 import { useState } from "react";
+import NewsTicker from "./components/NewsTicker";
 import Navbar from "./components/Navbar";
 import HeroPage from "./components/HeroPage";
 import FeatureIcons from "./components/Features";
@@ -14,10 +15,14 @@ import "./App.css";
 function App() {
   return (
     <>
+      <NewsTicker
+        messages={[
+          "Take full control of your media — encrypted playback, secure distribution, and immersive experiences — streamlined for enterprise use cases through a next-gen centralized platform, all without compromise. Deploy-ready for POS systems, digital kiosks, interactive displays, VR lounges, and experience centres, with built-in automation and simplified deployment — eliminating time lost to integration and overcoming technical challenges",
+        ]}
+      />
       <div className="sticky top-[-2vh] z-10 pt-[2vh] bg-[#EFFF00] w-full h-[max-content]">
         <Navbar />
       </div>
-
       <div className="pt-8 min--screen bg-[#EFFF00] w-full h-[max-content] landscape:h-[100vh]">
         <div className="mx-auto w-[90%]">
           <HeroPage />
