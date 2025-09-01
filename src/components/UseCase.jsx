@@ -46,57 +46,94 @@ export default function UseCases() {
         <h2 className="text-[2vh] landscape:text-[2vw] text-[#57c2c0]  font-bold mb-6 text-center uppercase tracking-wide">
           Enterprise and Professional Use Cases
         </h2>
-        <div className={`grid portrait:gap-8 gap-8 text-[1.25vh] landscape:text-[1.25vw] landscape:text-base landscape:w-[98%] transition-all duration-500 ease-in-out ${itemHovered % 2 === 0
-                    ? "landscape:grid-cols-[80%_20%]"
-                    : "landscape:grid-cols-[20%_80%]"
-                }`}>
-
+        <div
+          className={`grid portrait:gap-8 gap-8 text-[1.25vh] landscape:text-[1.25vw] landscape:text-base landscape:w-[98%] transition-all duration-500 ease-in-out ${
+            itemHovered % 2 === 0
+              ? "landscape:grid-cols-[80%_20%]"
+              : "landscape:grid-cols-[20%_80%]"
+          }`}
+        >
           {cases.map((item, i) => (
             <div
               ref={hoveringItemRef}
               key={i}
               onMouseEnter={() => setItemHovered(i)}
               onMouseLeave={() => setItemHovered(null)}
-              className={`portrait:flex portrait:flex-col landscape:flex landscape:flex-row landscape:w-[auto] h-[max-content] landscape:h-[100px] items-center ${i % 2 === 0 ? "" : "landscape:flex-row-reverse"} ${
-                  itemHovered === i
-                    ? "landscape:w-[150%]"
-                    : "landscape:w-[10%]"
-                }`}>
-
+              className={`portrait:flex portrait:flex-col landscape:flex landscape:flex-row landscape:w-[auto] h-[max-content] landscape:h-[100px] items-center ${
+                i % 2 === 0 ? "" : "landscape:flex-row-reverse"
+              } ${
+                itemHovered === i ? "landscape:w-[100%]" : "landscape:w-[10%]"
+              }`}
+            >
               {/* Left Label */}
-              <div className={`ml-0 mr-0 landscape:ml-0 bg-teal-700 text-white px-4 py-3 font-semibold relative w-[80%] landscape:w-[150px] h-[100%] flex items-center portrait:justify-center text-[1.5vh] landscape:text-[0.9vw] ${i % 2 === 0 ? "landscape:justify-start" : "landscape:justify-end landscape:ml-0 landscape:mr-0 text-end"} `}>
+              <div
+                className={`ml-0 mr-0 landscape:ml-0 bg-teal-700 text-white px-4 py-3 font-semibold relative w-[80%] landscape:min-w-[150px] landscape:w-[150px] h-[100%] flex items-center portrait:justify-center text-[1.5vh] landscape:text-[0.9vw] ${
+                  i % 2 === 0
+                    ? "landscape:justify-start"
+                    : "landscape:justify-end landscape:ml-0 landscape:mr-0 text-end"
+                } `}
+              >
                 {item.title}
                 {/* Little notch */}
                 <div
                   className={`hidden landscape:block absolute  top-[35%] landscape:top-0 translate-y-[0]  w-0 h-0 
                 border-t-[10px] border-t-transparent 
-                border-b-[10px] border-b-transparent 
+                border-b-[10px] border-b-transparent
                 border-l-[10px] 
                 border-[#949699]
-                ${i % 2 === 0 ? "right-0 translate-x-[100%]" : "left-0 translate-x-[-100%] rotate-180"}`}></div>
+                ${
+                  i % 2 === 0
+                    ? "right-0 translate-x-[100%]"
+                    : "left-0 translate-x-[-100%] rotate-180"
+                }`}
+                ></div>
               </div>
               {/* <div className="bg-[#067a78] text-white font-semibold px-4 py-2 rounded-l-xl min-w-[180px] w-[200px]">
                 {item.title}
               </div> */}
               {/* Right Content */}
+
+              {/* ${
+                   itemHovered === i
+                     ? "landscape:w-[70%] bg-gradient-to-r from-gray-100 to-gray-300"
+                     : "landscape:w-[70%]"
+                 } */}
               <div
-                className={`w-[70%] landscape:w-[10%] 
+                className={`w-[70%] 
                 relative z-[1] flex bg-gradient-to-b from-white to-gray-100 text-gray-800 px-6 py-4 
                 rounded-b-2xl landscape:rounded-none  shadow-sm h-[85%] 
                 landscape:h-[80%] text-[1.5vh] landscape:text-[0.8vw] transition-all duration-500 ease-in-out
+                
                 ${
-                  itemHovered === i
+                  itemHovered % 2 === 0 && i % 2 === 0
                     ? "landscape:w-[70%] bg-gradient-to-r from-gray-100 to-gray-300"
-                    : "landscape:w-[10%]"
+                    : "landscape:w-[70%]"
                 }
-                ${i % 2 === 0 ? "landscape:ml-0 landscape:mr-auto landscape:rounded-r-2xl" : "landscape:mr-0 landscape:ml-auto landscape:rounded-l-2xl"}
-                `}>
+                ${
+                  i % 2 === 0
+                    ? "landscape:ml-0 landscape:mr-auto landscape:rounded-r-2xl"
+                    : "landscape:mr-0 landscape:ml-auto landscape:rounded-l-2xl"
+                }
+                `}
+              >
+                {/* ${
+                      itemHovered === i
+                        ? "opacity-100 duration-500 delay-500 ease-in-out "
+                        : "opacity-0"
+                    } */}
                 <p
-                  className={`transition-all portrait:opacity-100 text-center ${
+                  className={`transition-all portrait:opacity-100 text-center justify-center item-center
+                    ${
+                      i % 2 === 0
+                        ? "text-right justify-center item-center"
+                        : "text-left justify-center item-center"
+                    }
+                  ${
                     itemHovered === i
                       ? "opacity-100 duration-500 delay-500 ease-in-out "
                       : "opacity-0"
-                  }`}>
+                  }`}
+                >
                   {item.desc}
                 </p>
               </div>
