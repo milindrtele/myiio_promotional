@@ -34,8 +34,8 @@ function FeatureIcons() {
               alt={icon.name}
               className="max-w-[100%] max-h-[100%]"
             />
-            <div className="w-[100%] h-[30%]">
-              <p className="bg-white font-semibold  shadow-lg text-center">
+            <div className="block w-[max-content] h-[30%] m-auto relative ">
+              <p className="absolute left-0 translate-x-[-50%] bg-white font-semibold  shadow-lg text-center text-[1.1vh] landscape:text-[0.85vw] text-nowrap">
                 {icon.name}
               </p>
             </div>

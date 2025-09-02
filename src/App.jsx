@@ -20,7 +20,7 @@ function App() {
           "Take full control of your media — encrypted playback, secure distribution, and immersive experiences — streamlined for enterprise use cases through a next-gen centralized platform, all without compromise. Deploy-ready for POS systems, digital kiosks, interactive displays, VR lounges, and experience centres, with built-in automation and simplified deployment — eliminating time lost to integration and overcoming technical challenges",
         ]}
       />
-      <div className="sticky top-[-2vh] z-10 pt-[2vh] bg-[#EFFF00] w-full h-[max-content]">
+      <div className="sticky top-[0] z-10 pt-0 bg-[#EFFF00] w-full h-[max-content]">
         <Navbar />
       </div>
       <div className="pt-8 min--screen bg-[#EFFF00] w-full h-[max-content] landscape:h-[100vh]">

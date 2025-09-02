@@ -90,7 +90,7 @@ function FAQ() {
       <h2 className="text-center text-[4vh] landscape:text-[4vw] text-[#57c2c0] font-bold mb-10">
         F. A. Q.
       </h2>
-      <div className="mx-auto bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[5px] border-[#355453] relative rounded-3xl p-8 shadow-lg w-[95%] landscape:w-[72%] mb-15">
+      <div className="mx-auto bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[5px] border-[#355453] relative rounded-3xl p-8 py-24 shadow-lg w-[95%] landscape:w-[72%] mb-15">
         <div className="w-[95%] landscape:w-[85%] mx-auto space-y-4">
           {faqs.map((item, index) => (
             <div

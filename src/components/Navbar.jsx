@@ -22,7 +22,7 @@ function Navbar() {
   return (
     <nav
       ref={navRef}
-      className={`flex items-center justify-between px-8 py-2 bg-black 
+      className={`flex items-center justify-between px-8 py-2 bg-[#363636] 
         ${isStuck ? "w-full" : "landscape:w-[90%] w-full"} 
         m-auto landscape:left-0 h-[max-content] text-[2vh] landscape:text-[1.25vw]`}>
       {/* Logo */}

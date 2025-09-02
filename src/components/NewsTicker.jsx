@@ -27,7 +27,7 @@ export default function NewsTicker({ messages }) {
   return (
     <div
       ref={containerRef}
-      className="w-full bg-black text-white overflow-hidden whitespace-nowrap py-2">
+      className="w-full bg-[#363636] text-white overflow-hidden whitespace-nowrap py-2">
       <div className="inline-flex space-x-8 px-4">
         {messages.map((msg, i) => (
           <span key={i} className="text-sm md:text-base">
