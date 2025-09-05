@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { Carousel } from "flowbite-react";
 
 export default function UseCases() {
   const cases = [
@@ -37,7 +38,7 @@ export default function UseCases() {
   ];
 
   const hoveringItemRef = useRef(null);
-  const [itemHovered, setItemHovered] = useState(false);
+  const [itemHovered, setItemHovered] = useState(null);
 
   const clickedItemRef = useRef(null);
   const [itemClicked, setItemClicked] = useState(false);
@@ -62,14 +63,17 @@ export default function UseCases() {
               onMouseEnter={() => setItemHovered(i)}
               onMouseLeave={() => setItemHovered(null)}
               onClick={() => setItemClicked(i)}
-              className={`portrait:flex portrait:flex-col landscape:w-[auto] h-[max-content] landscape:h-[100px] items-center ${
+              className={`portrait:flex portrait:flex-col landscape:w-[auto] h-[100px] landscape:h-[100px] items-center transition-all duration-500 ease-in-out ${
                 i % 2 === 0 ? "" : "landscape:flex-row-reverse"
-              } ${
-                itemHovered === i ? "landscape:w-[50%]" : "landscape:w-[10%]"
+              } ${itemHovered === i ? "landscape:w-[50%]" : "landscape:w-[10%]"}
+              ${
+                itemClicked === i
+                  ? "portrait:h-[max-content]"
+                  : "portrait:h-[100px]"
               }`}>
               {/* Left Label */}
               <div
-                className={`absolute z-[2] ml-0 mr-0 landscape:ml-0 bg-teal-700 text-white px-4 py-3 font-semibold relative w-[80%] landscape:max-w-[150px] landscape:w-[10vw] h-[100%] flex items-center portrait:justify-center text-[1.5vh] landscape:text-[0.9vw] ${
+                className={`absolute z-[2] ml-0 mr-0 landscape:ml-0 bg-teal-700 text-white px-4 py-3 font-semibold relative w-[80%] landscape:max-w-[150px] landscape:w-[10vw] portrait:h-[5vh] landscape:h-[100%] flex items-center portrait:justify-center text-[1.5vh] landscape:text-[0.9vw] transition-all duration-500 ease-in-out ${
                   i % 2 === 0
                     ? "landscape:justify-start landscape:ml-0 landscape:mr-0 text-start"
                     : "landscape:justify-end landscape:ml-auto landscape:mr-0 text-end"
@@ -117,14 +121,19 @@ export default function UseCases() {
                     }
                     ${
                       itemHovered === null && i % 2 === 0
-                        ? "opacity-100"
-                        : "opacity-0"
+                        ? "landscape:opacity-100"
+                        : "landscape:opacity-0"
                     }
 
                   ${
                     itemHovered !== null && itemHovered % 2 === i % 2
-                      ? "opacity-100 duration-500 delay-500 ease-in-out"
-                      : "opacity-0"
+                      ? "landscape:opacity-100 duration-500 delay-500 ease-in-out"
+                      : "landscape:opacity-0"
+                  }
+                  ${
+                    itemClicked === i
+                      ? "portrait:opacity-100"
+                      : "portrait:opacity-0"
                   }
                 `}>
                   {item.desc}
@@ -139,7 +148,7 @@ export default function UseCases() {
       </div>
 
       {/* Seamless Integration Section */}
-      <div className="grid landscape:grid-cols-[60%_40%] items-center w-[95%] landscape:w-[72%] mx-auto mt-20 landscape:mt-16">
+      <div className="grid landscape:grid-cols-[60%_40%] gap-8 items-center w-[95%] landscape:w-[72%] mx-auto mt-20 landscape:mt-16">
         {/* Left: Text Block */}
         <div className="bg-linear-to-t from-[#1d3d3d] to-[#07080d] border-[5px] border-[#355453] relative rounded-3xl p-8 shadow-lg">
           <div className="hover_icon w-[20%] h-[20%] absolute -top-15 landscape:-top-10 left-6 px-4 py-2"></div>
@@ -165,13 +174,102 @@ export default function UseCases() {
         </div>
 
         {/* Right: Image */}
-        <div className="flex justify-end">
+        <div className="flex flex-1 justify-end h-[100%] portrait:h-[60vh]">
           {/* <img
             src="/assets/holo-x.png"
             alt="Holo-X"
             className="rounded-xl shadow-xl max-w-xs"
           /> */}
-          <div className="holox_image mt-[20%] landscape:mt-0 landscape:mt-auto"></div>
+          {/* <div className="holox_image mt-[20%] landscape:mt-0 landscape:mt-auto"></div> */}
+
+          {/* <div className="h-56 w-[100%] sm:h-64 xl:h-80 2xl:h-96">
+            <Carousel>
+              <img src="/assets/myiio_img_101.png" alt="Image 1" />
+              <img src="/assets/myiio_img_102.png" alt="Image 2" />
+              <img src="/assets/myiio_img_103.png" alt="Image 3" />
+              <img src="/assets/myiio_img_104.png" alt="Image 4" />
+            </Carousel>
+          </div> */}
+
+          <div className="w-full h-[100%] rounded-lg shadow-md ">
+            <div
+              data-hs-carousel='{
+      "loadingClasses": "opacity-0",
+      "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500"
+    }'
+              className="relative w-full h-full">
+              <div className="hs-carousel relative overflow-hidden w-full min-h-64 h-full rounded-lg">
+                <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
+                  <div className="hs-carousel-slide">
+                    <div className="flex justify-center h-full p-6">
+                      <span className="self-center text-4xl text-gray-800 transition duration-700 dark:text-white w-full h-full">
+                        <div className="holox_image_2 w-full h-full"></div>
+                      </span>
+                    </div>
+                  </div>
+                  <div className="hs-carousel-slide">
+                    <div className="flex justify-center h-full p-6 ">
+                      <span className="self-center text-4xl text-gray-800 transition duration-700 dark:text-white w-full h-full">
+                        <div className="holox_image_2 w-full h-full"></div>
+                      </span>
+                    </div>
+                  </div>
+                  <div className="hs-carousel-slide">
+                    <div className="flex justify-center h-full p-6 ">
+                      <span className="self-center text-4xl text-gray-800 transition duration-700 dark:text-white w-full h-full">
+                        <div className="holox_image_2 w-full h-full"></div>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                className="hs-carousel-prev hs-carousel-disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-11.5 h-full text-gray-800 hover:bg-gray-800/10 focus:outline-hidden focus:bg-gray-800/10 rounded-s-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+                <span className="text-2xl" aria-hidden="true">
+                  <svg
+                    className="shrink-0 size-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round">
+                    <path d="m15 18-6-6 6-6"></path>
+                  </svg>
+                </span>
+                <span className="sr-only">Previous</span>
+              </button>
+              <button
+                type="button"
+                className="hs-carousel-next hs-carousel-disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-11.5 h-full text-gray-800 hover:bg-gray-800/10 focus:outline-hidden focus:bg-gray-800/10 rounded-e-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+                <span className="sr-only">Next</span>
+                <span className="text-2xl" aria-hidden="true">
+                  <svg
+                    className="shrink-0 size-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round">
+                    <path d="m9 18 6-6-6-6"></path>
+                  </svg>
+                </span>
+              </button>
+
+              <div className="hs-carousel-pagination flex justify-center absolute bottom-1 start-0 end-0 space-x-2 mt-[5%]"></div>
+            </div>
+          </div>
+
+          {/* <div className="holox_image mt-[20%] landscape:mt-0 landscape:mt-auto"></div> */}
         </div>
       </div>
     </section>

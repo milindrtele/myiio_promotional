@@ -66,12 +66,24 @@ body {
   margin: auto;
 }
 
+.holox_image_2 {
+  background-image: url("../public/assets/myiio_img_holobox.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+  /* height: 600px; */
+  /* margin: auto; */
+}
+
 .holox_image {
   background-image: url("../public/assets/myiio_img_holobox.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
   flex: 1;
+  width: 100%;
   height: 60vh;
   /* height: 600px; */
   /* margin: auto; */

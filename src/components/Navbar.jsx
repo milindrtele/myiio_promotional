@@ -3,10 +3,13 @@ import "../App.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [menu_2_open, setMenu_2_Open] = useState(true);
   const [productsOpen, setProductsOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
   const [isStuck, setIsStuck] = useState(false);
   const navRef = useRef(null);
+
+  const [openItem, setOpenItem] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,22 +25,31 @@ function Navbar() {
   return (
     <nav
       ref={navRef}
-      className={`flex items-center justify-between px-8 py-2 bg-[#363636] 
+      className={`flex items-center justify-between px-8  bg-[#363636] 
         ${isStuck ? "w-full" : "landscape:w-[90%] w-full"} 
         m-auto landscape:left-0 h-[max-content] text-[2vh] landscape:text-[1.25vw]`}>
       {/* Logo */}
       <div className="logo text-white font-bold"></div>
 
       {/* Desktop menu */}
-      <ul className="hidden landscape:flex space-x-8 text-white justify-end text-end landscape:ml-auto landscape:mr-[2%] relative">
+      <ul className="hidden h-[8.5vh] landscape:flex space-x-8 text-white justify-end text-end landscape:ml-auto landscape:mr-[2%] relative">
         {/* Products Dropdown */}
-        <li
+        <div
           className="relative group "
-          onMouseEnter={() => setProductsOpen(true)}
-          onMouseLeave={() => setProductsOpen(false)}>
-          <button className="hover:text-green-400">Products</button>
-          {productsOpen && (
-            <ul className="justify-start align-start text-start absolute top-[165%] left-0 bg-black text-white mt-2 rounded-b-2xl rounded-r-2xl shadow-lg py-2 w-40 ">
+          onMouseEnter={() => setOpenItem("products")}
+          onMouseLeave={() => setOpenItem(null)}
+          // </ul>onClick={() => setProductsOpen((prev) => !prev)}
+        >
+          <button
+            className={`${
+              openItem === "products" ? "text-green-400" : ""
+            } h-full`}>
+            Products
+          </button>
+          {openItem === "products" && (
+            <ul
+              onMouseLeave={() => setOpenItem(null)}
+              className="justify-start align-start text-start absolute top-[90%] left-0 bg-[#363636] text-white mt-2 rounded-b-2xl rounded-r-2xl shadow-lg py-2 w-40 ">
               <li className="">
                 <a
                   href="#product1"
@@ -54,16 +66,23 @@ function Navbar() {
               </li>
             </ul>
           )}
-        </li>
+        </div>
 
         {/* Solutions Dropdown */}
         <li
           className="relative group"
-          onMouseEnter={() => setSolutionsOpen(true)}
-          onMouseLeave={() => setSolutionsOpen(false)}>
-          <button className="hover:text-green-400">Solutions</button>
-          {solutionsOpen && (
-            <ul className="justify-start align-start text-start top-[165%] absolute left-0 bg-black text-white mt-2 rounded-b-2xl rounded-r-2xl shadow-lg py-2 w-40">
+          onMouseEnter={() => setOpenItem("solutions")}
+          onMouseLeave={() => setOpenItem(null)}>
+          <button
+            className={`${
+              openItem === "solutions" ? "text-green-400" : ""
+            } h-full`}>
+            Solutions
+          </button>
+          {openItem === "solutions" && (
+            <ul
+              onMouseLeave={() => setOpenItem(null)}
+              className="justify-start align-start text-start top-[90%] absolute left-0 bg-[#363636] text-white mt-2 rounded-b-2xl rounded-r-2xl shadow-lg py-2 w-40">
               <li>
                 <a
                   href="#solution1"
@@ -82,18 +101,24 @@ function Navbar() {
           )}
         </li>
 
-        <li>
-          <a href="#pricing" className="hover:text-green-400">
+        <li className="h-full">
+          <a
+            href="#pricing"
+            className="hover:text-green-400 h-full flex m-auto justify-center text-center items-center">
             Pricing
           </a>
         </li>
-        <li>
-          <a href="#features" className="hover:text-green-400">
-            Features
+        <li className="h-full">
+          <a
+            href="#features"
+            className="hover:text-green-400 h-full flex m-auto justify-center text-center items-center">
+            <p className="m-auto">Features</p>
           </a>
         </li>
-        <li>
-          <a href="#support" className="hover:text-green-400">
+        <li className="h-full">
+          <a
+            href="#support"
+            className="hover:text-green-400 h-full flex m-auto justify-center text-center items-center">
             Support
           </a>
         </li>
@@ -173,6 +198,44 @@ function Navbar() {
           <a href="#support" className="text-white hover:text-green-400">
             Support
           </a>
+        </div>
+      )}
+
+      {menu_2_open && (
+        <div className="absolute w-[10vw] h-[max-content] bg-black top-0 right-0 text-white">
+          <div className="absolute top-0 right-0 w-[2vw] h-[2vw]"></div>
+          <ul className="mt-[2vw]">
+            <li className="justify-center items-center flex w-full">
+              <div className="flex flex-row m-auto  py-2">
+                <div className="h-full w-8"></div>
+                <p>F.A.Q</p>
+              </div>
+            </li>
+            <li className="justify-center items-center flex">
+              <div className="flex flex-row m-auto  py-2">
+                <div className="h-full w-8"></div>
+                <p>Features</p>
+              </div>
+            </li>
+            <li className="justify-center items-center flex">
+              <div className="flex flex-row m-auto py-2">
+                <div className="h-full w-8"></div>
+                <p>Blogs</p>
+              </div>
+            </li>
+            <li className="justify-center items-center flex">
+              <div className="flex flex-row m-auto py-2">
+                <div className="h-full w-8"></div>
+                <p>Events</p>
+              </div>
+            </li>
+            <li className="justify-center items-center flex m-auto">
+              <div className="flex flex-row m-auto py-2">
+                <div className="h-full w-8"></div>
+                <p>Abouts</p>
+              </div>
+            </li>
+          </ul>
         </div>
       )}
     </nav>

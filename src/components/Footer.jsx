@@ -34,13 +34,13 @@ export default function Footer() {
         </div>
 
         {/* <div className="grid landscape:grid-cols-3 gap-10 m-auto landscape:mr-0 landscape:ml-auto justify-end text-center landscape:text-left w-[max-content]"> */}
-        <div className="flex landscape:flex-row flex-col m-auto landscape:mr-0 landscape:ml-auto justify-end text-center landscape:text-left w-[max-content]">
+        <div className="flex landscape:flex-row flex-col m-auto landscape:mr-8 landscape:ml-auto justify-end text-center landscape:text-left w-[max-content]">
           {/* Solutions */}
           <div className="flex flex-col w-[max-content] landscape:mx-[1vw]  portrait:mt-[15%]">
             <h3 className="font-semibold text-[2.5vh] landscape:text-[1.25vw] mb-4">
               Solutions
             </h3>
-            <ul className="space-y-1 text-gray-300 flex flex-col justify-start landscape:items-start text-[1.75vh] landscape:text-[0.70vw]">
+            <ul className="space-y-0.75 text-gray-300 flex flex-col justify-start landscape:items-start text-[1.75vh] landscape:text-[0.70vw]">
               <li>
                 <a href="#">Digital Signage</a>
               </li>
